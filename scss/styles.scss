@@ -44,3 +44,35 @@ body {
     opacity: 0.3;
 }
 // |=====| About CSS |=====| //
+
+// |=====| Services CSS |=====| //
+.services .decoration-bee1 {
+    z-index: 2;
+    left: 21px;
+    bottom: -19.769px;
+    width: 105.99px;
+    height: 105.99px;
+    transform: rotate(33.958deg);
+}
+
+.services .decoration-bee2 {
+    z-index: 2;
+    right: 64.961px;
+    top: 7px;
+    width: 155px;
+    height: 155px;
+    transform: rotate(-32.538deg);
+}
+
+.services .decoration-dots {
+    display: flex;
+    width: 257px;
+    height: 149px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -39px;
+    bottom: 6px;
+    opacity: 0.3;
+}
+// |=====| Services CSS |=====| //
