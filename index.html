@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/font-awesome.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -83,14 +87,15 @@
             <div class="col-md-6">
 
               <div class="text-container p-4 d-flex flex-column justify-content-center h-100 mb-5">
+                <p class="lead smallHeading">BeeCare</p>
                 <h1 class="display-3 fw-bold text-dark">Cuidemos a las abejas</h1>
                 <p class="lead text-dark">
                   Descubre la importancia de las abejas nativas y cómo puedes marcar la diferencia en su conservación.
                 </p>
 
                 <div>
-                  <a href="#about" class="btn btn-primary btn-lg m-2 text-white">Más detalles</a>
-                  <a href="signup.html" class="btn btn-secondary btn-lg m-2">Registrarme</a>
+                  <a href="#about" class="btn btn-primary text-white">Más detalles</a>
+                  <a href="signup.html" class="btn btn-secondary m-3 text-white">Registrarme</a>
                 </div>
               </div>
 
@@ -106,6 +111,38 @@
      </header>
     <!-- Header End -->
      
+    <!-- ABOUT 1 -->
+    <!-- About Section Start -->
+    <section id="about" class="about position-relative py-4 overflow-hidden bg-light">
+      <img src="images/decorationDots.svg" class="decoration-dots position-absolute">
+      <div class="container position-relative z-3">
+        <div class="row align-items-center">
+          <!-- Column 1 -->
+          <div class="col-lg-6">
+            <div class="image-container d-flex justify-content-center">
+              <img src="images/aboutImage.png" alt="About image" class="aboutImg img-fluid">
+            </div>
+          </div>
+          <!-- Column 1 -->
+          <!-- Column 2 -->
+          <div class="col-lg-6">
+            <div class="mt-4">
+              <p class="lead smallHeading">Sobre nosotros</p>
+              <h1>¿Qué es BeeCare?</h1>
+              <p class="lead">
+                BeeCare es una plataforma dedicada a la preservación y protección de las abejas nativas de México a través 
+                de un enfoque educativo e innovador. Nuestro objetivo es crear conciencia sobre la importancia de las abejas 
+                y contribuir al apoyo de los apicultores locales.
+              </p>
+              <a href="#about" class="btn btn-primary text-white">Más detalles</a>
+            </div>
+          </div>
+          <!-- Column 2 -->
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>

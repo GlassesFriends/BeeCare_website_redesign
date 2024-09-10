@@ -1,3 +1,13 @@
+.smallHeading {
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+  color: var(--bs-primary);
+}
+
+h1 {
+  font-weight: 700;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -16,4 +26,11 @@ body {
 .header {
   background: url(../images/homeHeroImage.jpg) center center no-repeat;
   background-size: cover;
+}
+
+.about .decoration-dots {
+  top: 1px;
+  right: -10px;
+  width: 200px;
+  opacity: 0.3;
 }

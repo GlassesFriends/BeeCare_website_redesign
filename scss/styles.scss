@@ -1,7 +1,22 @@
+// |=====| Global CSS |=====| //
+.smallHeading {
+    font-family: "Caveat", cursive;
+    font-weight: 700;
+    color: var(--bs-primary);
+}
+
+h1 {
+    font-weight: 700;
+}
+// |=====| Global CSS |=====| //
+
+// |=====| Body CSS |=====| //
 body {
     overflow-x: hidden;
 }
+// |=====| Body CSS |=====| //
 
+// |=====| Navbar CSS |=====| //
 .navbar {
     transition: all 0.1s ease-in-out;
 }
@@ -12,8 +27,20 @@ body {
     top: 0;
     z-index: 3;
 }
+// |=====| Navbar CSS |=====| //
 
+// |=====| Header CSS |=====| //
 .header {
     background: url(../images/homeHeroImage.jpg) center center no-repeat;
     background-size: cover;
 }
+// |=====| Header CSS |=====| //
+
+// |=====| About CSS |=====| //
+.about .decoration-dots {
+    top: 1px;
+    right: -10px;
+    width: 200px;
+    opacity: 0.3;
+}
+// |=====| About CSS |=====| //
