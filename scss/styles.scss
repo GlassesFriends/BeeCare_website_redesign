@@ -1,0 +1,19 @@
+body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    transition: all 0.1s ease-in-out;
+}
+
+.navbar-sticky {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    top: 0;
+    z-index: 3;
+}
+
+.header {
+    background: url(../images/homeHeroImage.jpg) center center no-repeat;
+    background-size: cover;
+}
