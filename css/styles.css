@@ -135,8 +135,15 @@ body {
   transform: rotate(225.627deg);
 }
 
+.contact .decoration-dots {
+  top: 1px;
+  right: -10px;
+  width: 200px;
+  opacity: 0.3;
+}
+
 .contact .decoration-bee1 {
-  left: -100.958px;
+  left: 20.958px;
   bottom: 4.065px;
   width: 155px;
   height: 155px;
@@ -144,7 +151,7 @@ body {
 }
 
 .contact .decoration-bee2 {
-  left: 50px;
+  left: 150px;
   bottom: -12.886px;
   width: 66.782px;
   height: 66.782px;
