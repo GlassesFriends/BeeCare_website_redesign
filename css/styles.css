@@ -64,3 +64,17 @@ body {
   bottom: 6px;
   opacity: 0.3;
 }
+
+.aIFeature .aiImg {
+  width: 448px;
+  height: 529px;
+  border-radius: 30px;
+}
+
+.aIFeature .decoration-AI {
+  width: 191px;
+  height: 180px;
+  right: 480px;
+  bottom: 20px;
+  z-index: 2;
+}
