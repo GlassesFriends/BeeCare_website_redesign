@@ -8,6 +8,11 @@
 h1 {
     font-weight: 700;
 }
+
+.required-input::after {
+    content: " *";
+    color: red;
+  }
 // |=====| Global CSS |=====| //
 
 // |=====| Body CSS |=====| //
@@ -123,8 +128,9 @@ body {
 }
 
 .shop .decoration-bee1 {
+    z-index: 2;
     left: 27.584px;
-    bottom: -18.393px;
+    top: 700px;
     width: 155px;
     height: 155px;
     transform: rotate(22.431deg);
@@ -146,3 +152,31 @@ body {
     transform: rotate(225.627deg);
 }
 // |=====| Shop CSS |=====| //
+
+// |=====| Contact CSS |=====| //
+.contact .decoration-bee1 {
+    left: -100.958px;
+    bottom: 4.065px;
+    width: 155px;
+    height: 155px;
+    transform: rotate(27.377deg);
+}
+
+.contact .decoration-bee2 {
+    left: 50px;
+    bottom: -12.886px;
+    width: 66.782px;
+    height: 66.782px;
+    transform: rotate(-17.681deg);
+}
+// |=====| Contact CSS |=====| //
+
+footer svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    transform: rotate(180deg);
+  }

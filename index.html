@@ -105,7 +105,7 @@
       </div>
       <!-- Hero End -->
 
-      <svg width="100%" height="100%" viewBox="0 0 1728 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="100%" height="100%" viewBox="0 0 1728 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-none d-lg-block">
         <path d="M1728 60H0V0C0 0 33.3339 21.2454 57 29.5C103.164 45.602 133.901 45.2715 182 36.5C216.333 30.2389 231.293 9.66444 266 6C287.576 3.72192 299.807 8.16365 321.5 8.5C361.554 9.12103 384.523 -2.30722 424 4.5C461.342 10.9392 476.664 37.4122 514.5 39.5C551.763 41.5562 569.723 13.7159 607 15.5C650.435 17.5788 666.102 61.7427 709.5 59C740.695 57.0285 753.173 36.0689 783.5 28.5C812.456 21.2733 830.508 27.5808 859.5 20.5C879.776 15.5479 889.384 6.26202 910 3C929.48 -0.0823517 939.5 -1 960.5 3.5C981.5 8 1068.77 47.7368 1139.5 39C1181.85 33.7689 1200.87 7.39946 1243.5 5.5C1261.29 4.70729 1289 8.5 1289 8.5L1373.5 2C1431 3.5 1434.29 38.4675 1477.5 40C1516.12 41.3696 1532 11 1573.5 16C1615 21 1636.82 62.7797 1682 58C1700.67 56.0247 1728 44 1728 44V60Z" fill="#FBF9F5"/>
       </svg>
     </header>
@@ -307,10 +307,10 @@
     <!-- Shop Section Start -->
     <section id="shop" class="shop position-relative py-5">
       <img src="images/decorationDots.svg" class="decoration-dots position-absolute">
-      <img src="images/decorationHoney.svg" class="decoration-honey position-absolute">
+      <img src="images/decorationHoney.svg" class="decoration-honey position-absolute d-none d-md-block">
       <img src="images/decorationBee.svg" class="decoration-bee1 position-absolute">
-      <img src="images/decorationBee.svg" class="decoration-bee2 position-absolute">
-      <img src="images/decorationBee.svg" class="decoration-bee3 position-absolute">
+      <img src="images/decorationBee.svg" class="decoration-bee2 position-absolute d-none d-lg-block">
+      <img src="images/decorationBee.svg" class="decoration-bee3 position-absolute d-none d-lg-block">
 
       <div class="container text-center">
         <p class="lead smallHeading">Próximamente...</p>
@@ -388,6 +388,118 @@
       </div>
     </section>
     <!-- Shop Section End -->
+
+    <!-- CONTACT -->
+    <!-- Contact Start -->
+    <section id="contact" class="contact position-relative py-5 bg-light">
+
+      <div class="container position-relative">
+        <img src="images/decorationBee.svg" class="decoration-bee1 position-absolute d-none d-lg-block">
+        <img src="images/decorationBee.svg" class="decoration-bee2 position-absolute d-none d-lg-block">
+
+        <div class="row align-items-center">
+          <!-- Column 1 -->
+          <div class="col-lg-6 d-none d-md-block">
+            <div class="image-container d-flex">
+              <img src="images/contactImage.png" alt="Contact image" class="img-fluid">
+            </div>
+          </div>
+          <!-- Column 1 -->
+          <!-- Column 2 -->
+          <div class="col-lg-6">
+            <div class="mt-4">
+              <h1>Comunícate con nosotros</h1>
+              <p class="fw-light">Si tienes alguna duda o estás interesado en ser parte del proyecto, manda un mensaje.</p>
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputName" class="form-label required-input">Nombre</label>
+                  <input type="text" class="form-control" id="inputName" placeholder="Escribe tu nombre">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputLastName" class="form-label required-input">Apellidos</label>
+                  <input type="text" class="form-control" id="inputLastName" placeholder="Escribe tus apellidos">
+                </div>
+                <div class="col-12">
+                  <label for="inputEmail" class="form-label required-input">Correo electrónico</label>
+                  <input type="text" class="form-control" id="inputEmail" placeholder="ejemplo@email.com">
+                </div>
+                <div class="col-12">
+                  <label for="inputMessage" class="form-label required-input">Mensaje</label>
+                  <textarea class="form-control" id="inputMessage" rows="3" placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary text-white">Enviar mensaje</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- Column 2 -->
+        </div>
+      </div>
+    </section>
+    <!-- Contact End -->
+
+    <!-- FOOTER -->
+    <!-- Footer Start -->
+    <footer class="footer position-relative border-none text-bg-secondary pt-5 pb-3">
+      <svg width="100%" height="100%" viewBox="0 0 1728 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-none d-lg-block footer-svg">
+        <path d="M1728 60H0V0C0 0 33.3339 21.2454 57 29.5C103.164 45.602 133.901 45.2715 182 36.5C216.333 30.2389 231.293 9.66444 266 6C287.576 3.72192 299.807 8.16365 321.5 8.5C361.554 9.12103 384.523 -2.30722 424 4.5C461.342 10.9392 476.664 37.4122 514.5 39.5C551.763 41.5562 569.723 13.7159 607 15.5C650.435 17.5788 666.102 61.7427 709.5 59C740.695 57.0285 753.173 36.0689 783.5 28.5C812.456 21.2733 830.508 27.5808 859.5 20.5C879.776 15.5479 889.384 6.26202 910 3C929.48 -0.0823517 939.5 -1 960.5 3.5C981.5 8 1068.77 47.7368 1139.5 39C1181.85 33.7689 1200.87 7.39946 1243.5 5.5C1261.29 4.70729 1289 8.5 1289 8.5L1373.5 2C1431 3.5 1434.29 38.4675 1477.5 40C1516.12 41.3696 1532 11 1573.5 16C1615 21 1636.82 62.7797 1682 58C1700.67 56.0247 1728 44 1728 44V60Z" fill="#FBF9F5"/>
+      </svg>
+
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 mb-3">
+            <h5>BeeCare</h5>
+            <p>BeeCare es un proyecto enfocado al cuidado de las abejas y su importancia en el ecosistema y el planeta. 
+              Nuestro enfoque principal es apoyar a los jóvenes a que conozcan sobre la variedad de abejas nativas que 
+              existen en nuestra localidad.</p>
+          </div>
+
+          <div class="col-lg-4 col-md-4 mb-3">
+            <h5>Enlaces importantes</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Inicio</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Sobre nosotros</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Blog</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Avistamientos</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 mb-3">
+            <form>
+              <h5>Suscríbete a nuestro boletín de noticias</h5>
+              <p class="fw-light">Enterate de nuestras últimas noticias</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <input id="newsletter1" type="text" class="form-control" placeholder="Correo electrónico">
+                <button class="btn btn-primary text-white" type="button">Suscribirse</button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- SOCIAL MEDIA -->
+    <!-- Social media Start -->
+    <section class="social py-3 overflow-hidden border-none">
+      <div class="container">
+        <div class="row">
+
+          <div class="d-flex flex-column flex-sm-row justify-content-between">
+            <p>© 2024 GlassesFriends. Todos los derechos reservados.</p>
+            <ul class="social-icons d-flex justify-content-center gap-3">
+              <i class="fab fa-facebook fa-2x"></i>
+              <i class="fab fa-twitter fa-2x"></i>
+              <i class="fab fa-instagram fa-2x"></i>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Social media End -->
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
