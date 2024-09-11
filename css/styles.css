@@ -86,3 +86,45 @@ body {
   height: 105.99px;
   transform: rotate(300deg);
 }
+
+.shop .decoration-dots {
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -39px;
+  top: 6px;
+  opacity: 0.3;
+}
+
+.shop .decoration-honey {
+  z-index: 1;
+  width: 407px;
+  height: 326px;
+  right: -169px;
+  bottom: 20.023px;
+}
+
+.shop .decoration-bee1 {
+  left: 27.584px;
+  bottom: -18.393px;
+  width: 155px;
+  height: 155px;
+  transform: rotate(22.431deg);
+}
+
+.shop .decoration-bee2 {
+  left: 570px;
+  top: 28px;
+  width: 88.106px;
+  height: 88.106px;
+  transform: rotate(128.373deg);
+}
+
+.shop .decoration-bee3 {
+  right: 571.232px;
+  top: 28px;
+  width: 88.106px;
+  height: 88.106px;
+  transform: rotate(225.627deg);
+}
