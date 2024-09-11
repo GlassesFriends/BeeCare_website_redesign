@@ -59,7 +59,7 @@
                 Mi cuenta
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="signin.html">Iniciar sesión</a></li>
+                <li><a class="dropdown-item" href="views/signin.html">Iniciar sesión</a></li>
                 <li><a class="dropdown-item" href="signup.html">Registrarme</a></li>
                 <li><a class="dropdown-item" href="profile.html">Mi perfil</a></li>
                 <li><hr class="dropdown-divider"></li>
@@ -105,17 +105,17 @@
       </div>
       <!-- Hero End -->
 
-      <svg width="1728" height="60" viewBox="0 0 1728 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="100%" height="100%" viewBox="0 0 1728 60" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1728 60H0V0C0 0 33.3339 21.2454 57 29.5C103.164 45.602 133.901 45.2715 182 36.5C216.333 30.2389 231.293 9.66444 266 6C287.576 3.72192 299.807 8.16365 321.5 8.5C361.554 9.12103 384.523 -2.30722 424 4.5C461.342 10.9392 476.664 37.4122 514.5 39.5C551.763 41.5562 569.723 13.7159 607 15.5C650.435 17.5788 666.102 61.7427 709.5 59C740.695 57.0285 753.173 36.0689 783.5 28.5C812.456 21.2733 830.508 27.5808 859.5 20.5C879.776 15.5479 889.384 6.26202 910 3C929.48 -0.0823517 939.5 -1 960.5 3.5C981.5 8 1068.77 47.7368 1139.5 39C1181.85 33.7689 1200.87 7.39946 1243.5 5.5C1261.29 4.70729 1289 8.5 1289 8.5L1373.5 2C1431 3.5 1434.29 38.4675 1477.5 40C1516.12 41.3696 1532 11 1573.5 16C1615 21 1636.82 62.7797 1682 58C1700.67 56.0247 1728 44 1728 44V60Z" fill="#FBF9F5"/>
       </svg>
-     </header>
+    </header>
     <!-- Header End -->
      
     <!-- ABOUT -->
     <!-- About Section Start -->
     <section id="about" class="about position-relative py-5 bg-light">
       <img src="images/decorationDots.svg" class="decoration-dots position-absolute">
-      <div class="container position-relative">
+      <div class="container">
         <div class="row align-items-center">
           <!-- Column 1 -->
           <div class="col-lg-6">
@@ -165,9 +165,7 @@
               <div class="card-body text-center">
                 <img src="images/beeIcon.svg" class="p-3 my-4">
                 <h5 class="card-title">Descubre el mundo de las abejas</h5>
-                <p class="card-text">
-                  Descubre información clave sobre las abejas nativas y su impacto en el ecosistema.
-                </p>
+                <p class="card-text fw-light">Descubre información clave sobre las abejas nativas y su impacto en el ecosistema.</p>
                 <p><a href="blog.html" class="link-secondary link-offset-2">Visitar Blog</a></p>
               </div>
             </div>
@@ -179,10 +177,7 @@
               <div class="card-body text-center">
                 <img src="images/AIIcon.svg" class="p-3 my-4">
                 <h5 class="card-title">Identifica especies de abejas con IA</h5>
-                <p class="card-text">
-                  Identifica especies de abejas mediante una fotografía con nuestra 
-                  IA avanzada.
-                </p>
+                <p class="card-text fw-light">Identifica especies de abejas mediante una fotografía con nuestra IA avanzada.</p>
                 <p><a href="newSighting.html" class="link-secondary link-offset-2">Registrar avistamiento</a></p>
               </div>
             </div>
@@ -194,9 +189,7 @@
               <div class="card-body text-center">
                 <img src="images/honeycombsIcon.svg" class="p-3 my-4">
                 <h5 class="card-title">Miel pura y 100% Natural</h5>
-                <p class="card-text">
-                  Compra miel natural y apoya a apicultores mexicanos comprometidos con el medio ambiente.
-                </p>
+                <p class="card-text fw-light">Compra miel natural y apoya a apicultores mexicanos comprometidos con el medio ambiente.</p>
                 <p><a href="beeCareShop.html" class="link-secondary link-offset-2">Comprar ahora</a></p>
               </div>
             </div>
@@ -210,8 +203,7 @@
     <!-- AI FEATURE -->
     <!-- AI Feature Section Start -->
     <section id="AIFeature" class="aIFeature position-relative py-5">
-      <img src="images/IADecorationImage.png" class="decoration-AI position-absolute">
-      <div class="container position-relative">
+      <div class="container">
         <div class="row align-items-center">
           <!-- Column 1 -->
           <div class="col-lg-6">
@@ -233,7 +225,7 @@
           <!-- Column 2 -->
           <div class="col-lg-6">
             <div class="image-container d-flex justify-content-center mt-4">
-              <img src="images/IAImage.jpg" alt="AI image" class="aiImg img-fluid">
+              <img src="images/IAImage.png" alt="AI image" class="aiImg img-fluid">
             </div>
           </div>
           <!-- Column 2 -->
@@ -241,6 +233,75 @@
       </div>
     </section>
     <!-- AI Feature Section End -->
+
+    <!-- BLOG -->
+    <!-- Blog Section Start -->
+    <section id="blog" class="blog position-relative py-6 bg-light">
+      <img src="images/decorationDots.svg" class="decoration-dots position-absolute">
+      <img src="images/decorationBee.svg" class="decoration-bee position-absolute">
+
+      <div class="container">
+        <p class="lead smallHeading text-center">Nuestras publicaciones</p>
+        <h1 class="pb-4 text-center">Aprende más sobre las abejas</h1>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mb-4 justify-content-center">
+            <!-- Card 1 -->
+            <div class="col">
+              <div class="card border-0 bg-light">
+                <img src="https://images.unsplash.com/photo-1568526381923-caf3fd520382?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Article 1">
+                <div class="card-body pt-3">
+                  <div class="pb-2">
+                    <p class="d-inline pe-3"><i class="fa-solid fa-user text-primary"></i> BeeCare</p>
+                    <p class="d-inline pe-3"><i class="fa-solid fa-message text-primary"></i> 1 comentario</p>
+                    <p class="d-inline"><i class="fa-solid fa-calendar text-primary"></i> 15/Sept/24</p>
+                  </div>
+
+                  <h5 class="card-title">Abejas en peligro de extinción</h5>
+                  <p class="card-text fw-light">Lamentablemente, las abejas se encuentran en peligro de extinción, ¡conoce las razones y cómo puedes contribuir a su cuidado!</p>
+                  <a href="article-1.html">Leer más</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 1 -->
+            <!-- Card 2 -->
+            <div class="col">
+              <div class="card border-0 bg-light">
+                <img src="https://images.unsplash.com/photo-1498936178812-4b2e558d2937?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Article 2">
+                <div class="card-body pt-3">
+                  <div class="pb-2">
+                    <p class="d-inline pe-3"><i class="fa-solid fa-user text-primary"></i> BeeCare</p>
+                    <p class="d-inline pe-3"><i class="fa-solid fa-message text-primary"></i> 3 comentarios</p>
+                    <p class="d-inline"><i class="fa-solid fa-calendar text-primary"></i> 10/Sept/24</p>
+                  </div>
+
+                  <h5 class="card-title">Especies de abejas mexicanas</h5>
+                  <p class="card-text fw-light">¿Sabías que México cuenta con una gran variedad de especies nativas de abejas? ¡Conoce cuales son!</p>
+                  <a href="article-2.html">Leer más</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <!-- Card 3 -->
+            <div class="col">
+              <div class="card border-0 bg-light">
+                <img src="https://images.unsplash.com/photo-1556201977-1df3c782a58e?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Article 3">
+                <div class="card-body pt-3">
+                  <div class="pb-2">
+                    <p class="d-inline pe-3"><i class="fa-solid fa-user text-primary"></i> BeeCare</p>
+                    <p class="d-inline pe-3"><i class="fa-solid fa-message text-primary"></i> 1 comentario</p>
+                    <p class="d-inline"><i class="fa-solid fa-calendar text-primary"></i> 30/Agosto/24</p>
+                  </div>
+
+                  <h5 class="card-title">Apicultura en México</h5>
+                  <p class="card-text fw-light">La apicultura es la crianza y cuidado de las abejas. A través de exta se obtienn productos como la miel. ¡Conoce cómo es el proceso!</p>
+                  <a href="article-3.html">Leer más</a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+          </div>
+      </div>
+    </section>
+    <!-- Blog Section End -->
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
