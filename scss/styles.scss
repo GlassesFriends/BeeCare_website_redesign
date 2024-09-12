@@ -9,9 +9,20 @@ h1 {
     font-weight: 700;
 }
 
+span {
+    color: var(--bs-primary);
+}
+
 .required-input::after {
     content: " *";
     color: red;
+}
+
+ul.list li::before {
+    content: "• ";
+    color: #000000;
+    font-weight: bold;
+    margin-right: 8px;
 }
 
 // |=====| ScrollBar CSS |=====| //
@@ -335,3 +346,52 @@ footer svg {
 }
 // |=====| Blog Section CSS |=====| //
 // ||------------------------------| Blog Home Page CSS |------------------------------| //
+
+// ||------------------------------| Article Template Page CSS |------------------------------| //
+.articleHeader {
+    background-color: var(--bs-light);
+}
+
+.image .decoration-dots1 {
+    z-index: -1;
+    top: 1px;
+    right: -10px;
+    width: 250px;
+    opacity: 0.3;
+}
+
+.image .decoration-bee1 {
+    z-index: 2;
+    left: 10px;
+    top: 80px;
+    width: 91.335px;
+    height: 91.335px;
+    transform: rotate(124.947deg);
+}
+
+.article .decoration-bee2 {
+    z-index: 2;
+    right: 45.23px;
+    bottom: 982.23px;
+    width: 91.335px;
+    height: 91.335px;
+    transform: rotate(-26.308deg);
+}
+
+.article .decoration-bee3 {
+    z-index: 2;
+    left: 41.543px;
+    bottom: 208.717px;
+    width: 125.989px;
+    height: 125.989px;
+    transform: rotate(15.979deg);
+}
+
+.comments .decoration-dots2 {
+    z-index: 0;
+    top: 10px;
+    left: -10px;
+    width: 257px;
+    opacity: 0.3;
+}
+// ||------------------------------| Article Template Page CSS |------------------------------| //
