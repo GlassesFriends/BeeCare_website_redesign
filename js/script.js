@@ -1,4 +1,4 @@
-// |-----| SweetAlert2 "Newsletter Subscription" |-----| //
+// |-----| SweetAlert2 "Newsletter Subscription" alert |-----| //
 function newsletter() {
     Swal.fire({
         title: "¡Felicidades!",
@@ -9,9 +9,9 @@ function newsletter() {
         confirmButtonText: 'Entendido'
     });
 }
-// |-----| SweetAlert2 "Newsletter Subscription" |-----| //
+// |-----| SweetAlert2 "Newsletter Subscription" alert |-----| //
 
-// |-----| SweetAlert2 "Contact" button |-----| //
+// |-----| SweetAlert2 "Contact" alert |-----| //
 function sendMessage() {
     Swal.fire({
         title: "¡Felicidades!",
@@ -22,9 +22,9 @@ function sendMessage() {
         confirmButtonText: 'Entendido'
     });
 }
-// |-----| SweetAlert2 "Contact" button |-----| //
+// |-----| SweetAlert2 "Contact" alert |-----| //
 
-// |-----| SweetAlert2 "Comment" button |-----| //
+// |-----| SweetAlert2 "Comment" alert |-----| //
 function sendComment() {
     Swal.fire({
         title: "¡Felicidades!",
@@ -35,9 +35,9 @@ function sendComment() {
         confirmButtonText: 'Entendido'
     });
 }
-// |-----| SweetAlert2 "Comment" button |-----| //
+// |-----| SweetAlert2 "Comment" alert |-----| //
 
-// |-----| SweetAlert2 "Register" button |-----| //
+// |-----| SweetAlert2 "Register" alert |-----| //
 function successfullRegister() {
     Swal.fire({
         title: "¡Felicidades!",
@@ -48,4 +48,4 @@ function successfullRegister() {
         confirmButtonText: '<a href="signin.html" class="text-white link-underline link-underline-opacity-0">Entendido</a>',
     });
 }
-// |-----| SweetAlert2 "Register" button |-----| //
+// |-----| SweetAlert2 "Register" alert |-----| //
