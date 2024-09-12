@@ -29,6 +29,11 @@ h1 {
   background-color: var(--bs-secondary);
 }
 
+::selection {
+  background-color: #E3F4E9; /* Color de fondo del resaltado */
+  color: #000000; /* Color del texto durante el resaltado */
+}
+
 body {
   overflow-x: hidden;
 }
@@ -248,4 +253,43 @@ footer svg {
   width: 100px;
   height: 155px;
   transform: rotate(-120deg);
+}
+
+.blogHeader {
+  background: url("https://images.unsplash.com/photo-1496571330383-9b977f4a021d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center center no-repeat;
+  background-size: cover;
+}
+
+.blogList .decoration-dots {
+  top: 1px;
+  right: -10px;
+  width: 200px;
+  opacity: 0.3;
+}
+
+.blogList .decoration-bee1 {
+  z-index: 2;
+  left: 53px;
+  top: 16px;
+  width: 91.335px;
+  height: 91.335px;
+  transform: rotate(124.947deg);
+}
+
+.blogList .decoration-bee2 {
+  z-index: 2;
+  right: 10px;
+  top: 580.947px;
+  width: 68.87px;
+  height: 68.87px;
+  transform: rotate(-50.797deg);
+}
+
+.blogList .decoration-bee3 {
+  z-index: 2;
+  left: 40.85px;
+  bottom: 10.663px;
+  width: 91.335px;
+  height: 91.335px;
+  transform: rotate(64.86deg);
 }
