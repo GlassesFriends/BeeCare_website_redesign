@@ -1,4 +1,4 @@
-// ||------------------------------| Global CSS ||------------------------------| //
+// ||------------------------------| Global CSS |------------------------------| //
 .smallHeading {
     font-family: "Caveat", cursive;
     font-weight: 700;
@@ -14,6 +14,7 @@ h1 {
     color: red;
 }
 
+// |=====| ScrollBar CSS |=====| //
 ::-webkit-scrollbar { width: 12px; }
 
 ::-webkit-scrollbar-track { background-color: lightgray; }
@@ -21,11 +22,14 @@ h1 {
 ::-webkit-scrollbar-thumb { background-color: var(--bs-primary); }
 
 ::-webkit-scrollbar-thumb:hover { background-color: var(--bs-secondary); }
+// |=====| ScrollBar CSS |=====| //
 
+// |=====| Selection color CSS |=====| //
 ::selection {
-    background-color: #E3F4E9; /* Color de fondo del resaltado */
-    color: #000000; /* Color del texto durante el resaltado */
+    background-color: #E3F4E9;
+    color: #000000;
 }
+// |=====| Selection color CSS |=====| //
 
 // |=====| Body CSS |=====| //
 body {
@@ -45,6 +49,8 @@ footer svg {
 }
 // |=====| Footer CSS |=====| //
 // ||------------------------------| Global CSS |------------------------------| //
+
+
 
 // ||------------------------------| Home Page CSS |------------------------------| //
 // |=====| Navbar CSS |=====| //
@@ -282,6 +288,8 @@ footer svg {
 }
 // |=====| Team Members CSS |=====| //
 // ||------------------------------| About Us Page CSS |------------------------------| //
+
+
 
 // ||------------------------------| Blog Home Page CSS |------------------------------| //
 // |=====| Header CSS |=====| //

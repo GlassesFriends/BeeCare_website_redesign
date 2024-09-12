@@ -30,8 +30,8 @@ h1 {
 }
 
 ::selection {
-  background-color: #E3F4E9; /* Color de fondo del resaltado */
-  color: #000000; /* Color del texto durante el resaltado */
+  background-color: #E3F4E9;
+  color: #000000;
 }
 
 body {
