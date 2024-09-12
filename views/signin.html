@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
-    
-        <link rel="stylesheet" href="/css/font-awesome.css" />
-        <link rel="stylesheet" href="/css/bootstrap.css" />
-        <link rel="stylesheet" href="/css/styles.css" />
-        <link rel="icon" href="/images/beeCareLogo2.png" />
-        <title>BeeCare | About Us</title>
-      </head>
+  <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+  
+      <link rel="stylesheet" href="/css/font-awesome.css" />
+      <link rel="stylesheet" href="/css/bootstrap.css" />
+      <link rel="stylesheet" href="/css/styles.css" />
+      <link rel="icon" href="/images/beeCareLogo2.png" />
+      <title>BeeCare | About Us</title>
+  </head>
 
   <body>
     <!-- NAVIGATION -->
@@ -76,6 +76,53 @@
     </nav>
     <!-- Navigation End -->
 
+    <!-- SIGNIN FORM -->
+    <!-- SigIn Form Start -->
+    <section id="signin" class="signin position-relative py-6 bg-light">
+      <div class="container">
+        <img src="/images/decorationBee.svg" class="decoration-bee1 position-absolute d-none d-md-block">
+        <img src="/images/decorationBee.svg" class="decoration-bee2 position-absolute d-none d-lg-block">
+
+        <div class="row align-items-center">
+            <div class="card border-0">
+              <div class="card-body mx-5 my-2">
+                <div class="row">
+                  <!-- Column 1: Form -->
+                  <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <div>
+                      <h1>Iniciar sesión</h1>
+                      <form class="row g-3">
+                        <div class="col-12">
+                          <label for="inputEmail" class="form-label required-input">Correo electrónico</label>
+                          <input type="email" class="form-control" id="inputEmail" placeholder="ejemplo@email.com">
+                        </div>
+                        <div class="col-12">
+                          <label for="inputPassword" class="form-label required-input">Contraseña</label>
+                          <input type="password" class="form-control" id="inputEmail" placeholder="Escribe tu contraseña">
+                        </div>
+                        <div class="col-12 d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                          <a href="/index.html" class="btn btn-primary text-white mb-3 mb-md-0" type="button">Ingresar</a>
+                          <p>¿No tienes una cuenta? <a class="link" href="signup.html">Regístrate</a></p>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <!-- Column 1: Form -->
+                  <!-- Column 2: Image -->
+                  <div class="col-lg-6 d-none d-md-block pt-3">
+                    <div class="image-container d-flex">
+                      <img src="/images/loginImage.png" alt="Sign In image" class="img-fluid">
+                    </div>
+                  </div>
+                  <!-- Column 2: Image -->
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- SigIn Form End -->
+
     <!-- FOOTER -->
     <!-- Footer Start -->
     <footer class="footer position-relative border-none text-bg-secondary pt-5 pb-3">
@@ -115,32 +162,32 @@
   
           </div>
         </div>
-      </footer>
-      <!-- Footer End -->
+    </footer>
+    <!-- Footer End -->
   
-      <!-- SOCIAL MEDIA -->
-      <!-- Social media Start -->
-      <section class="social py-3 overflow-hidden border-none">
-        <div class="container">
-          <div class="row">
-  
-            <div class="d-flex flex-column flex-sm-row justify-content-between">
-              <p>© 2024 GlassesFriends. Todos los derechos reservados.</p>
-              <ul class="social-icons d-flex justify-content-center gap-3">
-                <i class="fab fa-facebook fa-2x"></i>
-                <i class="fab fa-twitter fa-2x"></i>
-                <i class="fab fa-instagram fa-2x"></i>
-              </ul>
-            </div>
-  
+    <!-- SOCIAL MEDIA -->
+    <!-- Social media Start -->
+    <section class="social py-3 overflow-hidden border-none">
+      <div class="container">
+        <div class="row">
+
+          <div class="d-flex flex-column flex-sm-row justify-content-between">
+            <p>© 2024 GlassesFriends. Todos los derechos reservados.</p>
+            <ul class="social-icons d-flex justify-content-center gap-3">
+              <i class="fab fa-facebook fa-2x"></i>
+              <i class="fab fa-twitter fa-2x"></i>
+              <i class="fab fa-instagram fa-2x"></i>
+            </ul>
           </div>
+
         </div>
-      </section>
-      <!-- Social media End -->
+      </div>
+    </section>
+    <!-- Social media End -->
        
-      <script src="sweetalert2.all.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-      <script src="/js/bootstrap.bundle.min.js"></script>
-      <script src="/js/script.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
