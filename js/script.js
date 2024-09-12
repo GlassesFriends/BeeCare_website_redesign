@@ -23,3 +23,16 @@ function sendMessage() {
     });
 }
 // |-----| SweetAlert2 "Contact" button |-----| //
+
+// |-----| SweetAlert2 "Contact" button |-----| //
+function sendComment() {
+    Swal.fire({
+        title: "¡Felicidades!",
+        text: "Tu comentario se ha publicado con éxito",
+        icon: "success",
+
+        confirmButtonColor: '#FB8500',
+        confirmButtonText: 'Entendido'
+    });
+}
+// |-----| SweetAlert2 "Contact" button |-----| //
