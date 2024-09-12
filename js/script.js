@@ -1,21 +1,25 @@
-// |-----| Scroll Effect function |-----| //
-function userScroll() {
-    const navbar = document.querySelector('.navbar');
+// |-----| SweetAlert2 "Newsletter Subscription" |-----| //
+function newsletter() {
+    Swal.fire({
+        title: "¡Felicidades!",
+        text: "Ahora recibirás noticias semanales",
+        icon: "success",
 
-    if (navbar) { 
-        const handleScroll = () => {
-            if (window.scrollY > 0) {
-                navbar.classList.add('navbar-sticky');
-            } else {
-                navbar.classList.remove('navbar-sticky');
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        handleScroll();
-    }
+        confirmButtonColor: '#FB8500',
+        confirmButtonText: 'Entendido'
+    });
 }
-// |-----| Scroll Effect function |-----| //
+// |-----| SweetAlert2 "Newsletter Subscription" |-----| //
 
-document.addEventListener('DOMContentLoaded', userScroll);
+// |-----| SweetAlert2 "Contact" button |-----| //
+function sendMessage() {
+    Swal.fire({
+        title: "¡Felicidades!",
+        text: "Tu mensaje se ha enviado con éxito",
+        icon: "success",
+
+        confirmButtonColor: '#FB8500',
+        confirmButtonText: 'Entendido'
+    });
+}
+// |-----| SweetAlert2 "Contact" button |-----| //

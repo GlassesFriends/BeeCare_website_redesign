@@ -1,4 +1,4 @@
-// |=====| Global CSS |=====| //
+// ||------------------------------| Global CSS ||------------------------------| //
 .smallHeading {
     font-family: "Caveat", cursive;
     font-weight: 700;
@@ -12,8 +12,15 @@ h1 {
 .required-input::after {
     content: " *";
     color: red;
-  }
-// |=====| Global CSS |=====| //
+}
+
+::-webkit-scrollbar { width: 12px; }
+
+::-webkit-scrollbar-track { background-color: lightgray; }
+
+::-webkit-scrollbar-thumb { background-color: var(--bs-primary); }
+
+::-webkit-scrollbar-thumb:hover { background-color: var(--bs-secondary); }
 
 // |=====| Body CSS |=====| //
 body {
@@ -21,6 +28,20 @@ body {
 }
 // |=====| Body CSS |=====| //
 
+// |=====| Footer CSS |=====| //
+footer svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    transform: rotate(180deg);
+}
+// |=====| Footer CSS |=====| //
+// ||------------------------------| Global CSS |------------------------------| //
+
+// ||------------------------------| Home Page CSS |------------------------------| //
 // |=====| Navbar CSS |=====| //
 .navbar {
     transition: all 0.1s ease-in-out;
@@ -177,15 +198,21 @@ body {
     transform: rotate(-17.681deg);
 }
 // |=====| Contact CSS |=====| //
+// ||------------------------------| Home Page CSS |------------------------------| //
 
-// |=====| Footer CSS |=====| //
-footer svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    z-index: 1;
-    transform: rotate(180deg);
+
+
+// ||------------------------------| About Us Page CSS |------------------------------| //
+// |=====| Header CSS |=====| //
+.aboutHeader {
+    background: url("https://images.unsplash.com/photo-1687853769369-36c6dcfa04d0?q=80&w=1684&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center;
 }
-// |=====| Footer CSS |=====| //
+// |=====| Header CSS |=====| //
+
+// |=====| Intro CSS |=====| //
+.intro .introImg {
+    border-radius: 20px;
+    height: 400px;
+}
+// |=====| Intro CSS |=====| //
+// ||------------------------------| About Us Page CSS |------------------------------| //

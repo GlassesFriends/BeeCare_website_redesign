@@ -23,11 +23,11 @@
   <body>
     <!-- NAVIGATION -->
     <!-- Navigation Start -->
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-lg sticky-top bg-white shadow-sm p-3 bg-white rounded">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img src="images/beeCareLogo1.png" alt="" width="124" />
-          </a>
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,22 +37,22 @@
               <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">Sobre nosotros</a>
+              <a class="nav-link" href="views/about.html">Sobre nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
+              <a class="nav-link" href="views/blog.html">Blog</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Avistamientos
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="sightings.html">Mapa</a></li>
-                <li><a class="dropdown-item" href="newSighting.html">Registrar avistamiento</a></li>
+                <li><a class="dropdown-item" href="views/sightings.html">Mapa</a></li>
+                <li><a class="dropdown-item" href="views/newSighting.html">Registrar avistamiento</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="beeCareShop.html">BeeCare Shop <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a class="nav-link" href="views/beeCareShop.html">BeeCare Shop <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -60,8 +60,8 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="views/signin.html">Iniciar sesión</a></li>
-                <li><a class="dropdown-item" href="signup.html">Registrarme</a></li>
-                <li><a class="dropdown-item" href="profile.html">Mi perfil</a></li>
+                <li><a class="dropdown-item" href="views/signup.html">Registrarme</a></li>
+                <li><a class="dropdown-item" href="views/profile.html">Mi perfil</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="index.html">Cerrar sesión</a></li>
               </ul>
@@ -86,7 +86,7 @@
           <div class="row">
             <div class="col-md-6">
 
-              <div class="text-container p-4 d-flex flex-column justify-content-center h-100 mb-5">
+              <div class="text-container p-3 d-flex flex-column justify-content-center h-100 mb-5">
                 <p class="lead smallHeading">BeeCare</p>
                 <h1 class="display-3 fw-bold text-dark">Cuidemos a las abejas</h1>
                 <p class="lead text-dark">
@@ -428,7 +428,7 @@
                   <textarea class="form-control" id="inputMessage" rows="3" placeholder="Escribe tu mensaje aquí..."></textarea>
                 </div>
                 <div class="col-12">
-                  <button type="submit" class="btn btn-primary text-white">Enviar mensaje</button>
+                  <button class="btn btn-primary text-white" onclick=sendMessage() type="button">Enviar mensaje</button>
                 </div>
               </form>
             </div>
@@ -458,10 +458,10 @@
           <div class="col-lg-4 col-md-4 mb-3">
             <h5>Enlaces importantes</h5>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Inicio</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Sobre nosotros</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Blog</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Avistamientos</a></li>
+              <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Inicio</a></li>
+              <li class="nav-item mb-2"><a href="views/about.html" class="nav-link p-0 text-body-secondary">Sobre nosotros</a></li>
+              <li class="nav-item mb-2"><a href="views/blog.html" class="nav-link p-0 text-body-secondary">Blog</a></li>
+              <li class="nav-item mb-2"><a href="views/sightings.html" class="nav-link p-0 text-body-secondary">Avistamientos</a></li>
             </ul>
           </div>
 
@@ -471,7 +471,7 @@
               <p class="fw-light">Enterate de nuestras últimas noticias</p>
               <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                 <input id="newsletter1" type="text" class="form-control" placeholder="Correo electrónico">
-                <button class="btn btn-primary text-white" type="button">Suscribirse</button>
+                <button class="btn btn-primary text-white" onclick=newsletter() type="button">Suscribirse</button>
               </div>
             </form>
           </div>
@@ -501,6 +501,7 @@
     </section>
     <!-- Social media End -->
 
+    <script src="sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>

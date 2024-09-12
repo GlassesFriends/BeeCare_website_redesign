@@ -13,8 +13,34 @@ h1 {
   color: red;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--bs-primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--bs-secondary);
+}
+
 body {
   overflow-x: hidden;
+}
+
+footer svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  transform: rotate(180deg);
 }
 
 .navbar {
@@ -158,12 +184,11 @@ body {
   transform: rotate(-17.681deg);
 }
 
-footer svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  z-index: 1;
-  transform: rotate(180deg);
+.aboutHeader {
+  background: url("https://images.unsplash.com/photo-1687853769369-36c6dcfa04d0?q=80&w=1684&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center;
+}
+
+.intro .introImg {
+  border-radius: 20px;
+  height: 400px;
 }
