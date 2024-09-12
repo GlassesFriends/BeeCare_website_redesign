@@ -185,10 +185,27 @@ footer svg {
 }
 
 .aboutHeader {
-  background: url("https://images.unsplash.com/photo-1687853769369-36c6dcfa04d0?q=80&w=1684&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center;
+  background: url("https://images.unsplash.com/photo-1687853769369-36c6dcfa04d0?q=80&w=1684&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center center no-repeat;
+  background-size: cover;
 }
 
 .intro .introImg {
   border-radius: 20px;
   height: 400px;
+}
+
+.intro .decoration-dots {
+  top: 1px;
+  right: -10px;
+  width: 300px;
+  opacity: 0.3;
+}
+
+.intro .decoration-bee {
+  z-index: 2;
+  left: 21px;
+  top: 26px;
+  width: 100px;
+  height: 155px;
+  transform: rotate(99.018deg);
 }
