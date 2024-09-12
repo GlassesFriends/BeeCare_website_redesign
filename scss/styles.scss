@@ -254,4 +254,26 @@ footer svg {
     transform: rotate(-120.164deg);
 }
 // |=====| Mision & Vision CSS |=====| //
+
+// |=====| Team Members CSS |=====| //
+.team .teamMember {
+    width: 200px;
+}
+
+.team .decoration-dots {
+    top: 250px;
+    right: -10px;
+    width: 200px;
+    opacity: 0.3;
+}
+
+.team .decoration-bee {
+    z-index: 2;
+    right: 21px;
+    top: 26px;
+    width: 100px;
+    height: 155px;
+    transform: rotate(-120deg);
+}
+// |=====| Team Members CSS |=====| //
 // ||------------------------------| About Us Page CSS |------------------------------| //
