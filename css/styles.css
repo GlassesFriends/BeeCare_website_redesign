@@ -209,3 +209,23 @@ footer svg {
   height: 155px;
   transform: rotate(99.018deg);
 }
+
+.mision .decoration-dots {
+  z-index: 2;
+  bottom: 1px;
+  left: 10px;
+  width: 300px;
+  opacity: 0.3;
+}
+
+.mision .misionImg {
+  width: 500px;
+}
+
+.mision .decoration-bee {
+  right: 32.222px;
+  top: 15px;
+  width: 95.663px;
+  height: 95.663px;
+  transform: rotate(-120.164deg);
+}
