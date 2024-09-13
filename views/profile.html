@@ -76,46 +76,134 @@
     </nav>
     <!-- Navigation End -->
 
-    <!-- ANNOUNCEMENT -->
-    <!-- Announcement Start -->
-    <section id="announcement" class="announcement position-relative py-6 bg-light">
-      <div class="container">
-        <img src="/images/decorationBee.svg" class="decoration-bee1 position-absolute d-none d-md-block">
-        <img src="/images/decorationBee.svg" class="decoration-bee2 position-absolute d-none d-lg-block">
+    <!-- PROFILE -->
+    <!-- Profile Sectiom Start -->
+    <section class="userProfile bg-light py-6">
+      <img src="/images/decorationBee.svg" class="decoration-bee1 position-absolute">
+      <img src="/images/decorationBee.svg" class="decoration-bee2 position-absolute d-none d-xxl-block">
 
-        <div class="row align-items-center">
-            <div class="card border-0">
-              <div class="card-body mx-5">
-                <div class="row">
-                  <!-- Column 1: Image -->
-                  <div class="col-lg-6 d-none d-md-block pt-3">
-                    <div class="image-container d-flex">
-                      <img src="/images/product4.png" alt="Sign In image" class="img-fluid">
+        <div class="container">
+          <div class="row gy-4 gy-lg-0">
+
+            <div class="col-12 col-lg-4 col-xl-3">
+              <div class="row gy-4">
+
+                <div class="col-12">
+                    <div class="card border-0">
+                      <div class="card-body">
+                        <div class="text-center mb-3">
+                          <img src="/images/teamMember2.png" class="img-fluid rounded-circle" width="70%" alt="User Photo">
+                        </div>
+
+                        <div class="text-center pb-2">
+                          <a type="submit" class="text-primary">Editar</a>
+                        </div>
+                  
+                        <h4 class="text-center mb-1">Abril Ramirez Flores</h4>
+                        <p class="text-center text-dark fw-light mb-4">Avistamientos registrados: <strong>2</strong></p>
+                      </div>
                     </div>
                   </div>
-                  <!-- Column 1: Image -->
-                  <!-- Column 2: Form -->
-                  <div class="col-lg-6 d-flex justify-content-center align-items-center">
-                    <div>
-                      <h1>Próximamente...</h1>
-                      <form class="row g-3">
-                        <div class="col-12">
-                            <p class="lead">Muy pronto colaboraremos con empresas mexicanas para brindarles productos de calidad...</p>
-                        </div>
-                        <div class="col-12 d-flex flex-column flex-lg-row justify-content-between align-items-center">
-                          <a href="/index.html" type="button">Regresar a la página de inicio</a>
+
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-8 col-xl-9">
+              <div class="card border-0">
+                <div class="card-body p-4">
+                  
+                  <ul class="nav nav-tabs" id="profileTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#overview-tab-pane" type="button" role="tab" aria-controls="overview-tab-pane" aria-selected="true">Sobre mí</button>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="password-tab" data-bs-toggle="tab" data-bs-target="#password-tab-pane" type="button" role="tab" aria-controls="password-tab-pane" aria-selected="false">Contraseña</button>
+                    </li>
+                  </ul>
+
+                    <div class="tab-content" id="profileTabContent">
+                      <div class="tab-pane fade show active" id="overview-tab-pane" role="tabpanel" aria-labelledby="overview-tab" tabindex="0">
+                        <form id="profileForm" action="#!" class="row gy-sm-2">
+                            <h4 class="pt-4">Información personal</h4>
+                            <div class="col-12 col-md-6">
+                                <label for="inputFirstName" class="form-label">Nombres</label>
+                                <input disabled type="text" class="form-control" id="inputFirstName" value="Abril" placeholder="Escribe tus nombres" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="inputLastName" class="form-label">Apellidos</label>
+                                <input disabled type="text" class="form-control" id="inputLastName" value="Ramirez Flores" placeholder="Escribe tus apellidos" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="inputDate" class="form-label">Fecha de nacimiento</label>
+                                <input disabled type="date" class="form-control" id="inputDate" value="2001-03-01" required>
+                            </div>
+                    
+                            <h4 class="pt-4">Información de contacto</h4>
+                            <div class="col-12 col-md-6">
+                                <label for="inputEmail" class="form-label">Correo electrónico</label>
+                                <input disabled type="email" class="form-control" id="inputEmail" value="isc.ramirez_abril@outlook.com" placeholder="Escribe tu correo" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="inputPhone" class="form-label">Número de teléfono</label>
+                                <input disabled type="text" class="form-control" id="inputPhone" value="1234567890" placeholder="Escribe tu número de teléfono" required>
+                            </div>
+                    
+                            <div class="col-12 pt-4">
+                              <button type="button" id="editButton" class="btn btn-primary text-white">Editar</button>
+                            </div>
+                    
+                            <div class="col-12 d-none" id="actionButtons">
+                              <button type="button" id="saveButton" class="btn btn-primary text-white me-2" onclick="updateUser()">Guardar cambios</button>
+                              <button type="button" id="cancelButton" class="btn btn-outline-danger" onclick="cancelUpdate()">Cancelar</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="tab-pane fade position-relative" id="password-tab-pane" role="tabpanel" aria-labelledby="password-tab" tabindex="0">
+                      <form action="#!">
+                        <div class="row gy-sm-2">
+                        <h4 class="pt-4">Cambiar contraseña</h4>
+                          <div class="col-12">
+                            <label for="currentPassword" class="form-label">Contraseña actual</label>
+                            <input type="password" class="form-control" id="currentPassword" placeholder="Escribe tu contraseña actual">
+                            <i class="far fa-eye position-absolute" id="toggleCurrentPassword"></i>
+                          </div>
+                          <div class="col-12">
+                            <label for="newPassword" class="form-label">Nueva contraseña</label>
+                            <input type="password" class="form-control" id="newPassword" placeholder="Escribe tu nueva contraseña">
+                            <i class="far fa-eye position-absolute" id="toggleNewPassword"></i>
+                          </div>
+                          <div class="col-12">
+                            <label for="confirmPassword" class="form-label">Repetir nueva contraseña</label>
+                            <input type="password" class="form-control" id="confirmPassword" placeholder="Repite tu nueva contraseña">
+                            <i class="far fa-eye position-absolute" id="toggleConfirmPassword"></i>
+                          </div>
+                          <div class="col-12 pt-4">
+                            <button type="submit" class="btn btn-primary text-white">Guardar cambios</button>
+                          </div>
                         </div>
                       </form>
+
+                      <h4 class="pt-5">Autenticación en 2 pasos</h4>
+                      <p class="fw-light">Aumente la seguridad de su cuenta solicitando que se introduzca un código enviado por correo electrónico al iniciar sesión. Para más información sobre cómo funciona 
+                        la autenticación multifactor, consulte nuestro artículo del <a class="link">Centro de ayuda</a>.
+                      </p>
+
+                      <div class="col-12 pt-3">
+                        <button type="submit" class="btn btn-primary text-white">Activar</button>
+                      </div>
+
                     </div>
                   </div>
-                  <!-- Column 2: Form -->
                 </div>
               </div>
             </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- Announcement End -->
+      
+      </section>
+    <!-- Profile Section End -->
 
     <!-- FOOTER -->
     <!-- Footer Start -->

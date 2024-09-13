@@ -370,3 +370,74 @@ footer svg {
   height: 66.782px;
   transform: rotate(52.034deg);
 }
+
+.signup .decoration-bee1 {
+  z-index: 2;
+  right: 62.318px;
+  top: 50px;
+  width: 155px;
+  height: 155px;
+  transform: rotate(-151.019deg);
+}
+
+.signup .decoration-bee2 {
+  z-index: 2;
+  right: 250px;
+  top: 50px;
+  width: 66.782px;
+  height: 66.782px;
+  transform: rotate(163.922deg);
+}
+
+.announcement .decoration-bee1 {
+  z-index: 2;
+  right: 62.318px;
+  top: 50px;
+  width: 155px;
+  height: 155px;
+  transform: rotate(-137.178deg);
+}
+
+.announcement .decoration-bee2 {
+  z-index: 2;
+  left: 120px;
+  bottom: 80.794px;
+  width: 66.782px;
+  height: 66.782px;
+  transform: rotate(52.034deg);
+}
+
+.userProfile .decoration-bee1 {
+  z-index: 2;
+  right: 80px;
+  top: 100px;
+  width: 120px;
+  transform: rotate(-137.178deg);
+}
+
+.userProfile .decoration-bee2 {
+  z-index: 2;
+  left: 100px;
+  top: 360px;
+  width: 66.782px;
+  height: 66.782px;
+  transform: rotate(52.034deg);
+}
+
+#toggleCurrentPassword {
+  top: 133px;
+  right: 15px;
+  cursor: pointer;
+}
+
+#toggleNewPassword {
+  top: 217px;
+  right: 15px;
+  cursor: pointer;
+}
+
+#toggleConfirmPassword {
+  top: 302px;
+  right: 15px;
+  cursor: pointer;
+}

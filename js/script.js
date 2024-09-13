@@ -49,3 +49,116 @@ function successfullRegister() {
     });
 }
 // |-----| SweetAlert2 "Register" alert |-----| //
+
+// |-----| User Profile - Personal Info Tab JavaScript |-----| //
+const inputs = document.querySelectorAll('input');
+const labels = document.querySelectorAll('label');
+const editButton = document.getElementById('editButton');
+const actionButtons = document.getElementById('actionButtons');
+
+editButton.addEventListener('click', function() {
+  inputs.forEach(input => {
+    input.disabled = false;
+    input.required = true;
+  });
+
+  labels.forEach(label => {
+    label.classList.add('required-input');
+  });
+
+  actionButtons.classList.remove('d-none');
+  editButton.classList.add('d-none');
+});
+
+// |-----| SweetAlert2 "Update User Info Success" alert |-----| //
+function updateUser() {
+  Swal.fire({
+    title: "¡Felicidades!",
+    text: "Tus datos se han actualizado correctamente",
+    icon: "success",
+    confirmButtonColor: '#FB8500',
+    confirmButtonText: '<a href="profile.html" class="text-white link-underline link-underline-opacity-0">Entendido</a>'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      // Código que quieres ejecutar cuando se presiona el botón en la alerta
+      inputs.forEach(input => {
+        input.disabled = false;
+        input.required = true;
+      });
+
+      labels.forEach(label => {
+        label.classList.add('required-input');
+      });
+
+      actionButtons.classList.remove('d-none');
+      editButton.classList.add('d-none');
+    }
+  });
+}
+// |-----| SweetAlert2 "Update User Info Success" alert |-----| //
+
+// |-----| SweetAlert2 "Update User Info Cancel" alert |-----| //
+function cancelUpdate() {
+  Swal.fire({
+    title: "¿Estás seguro que quieres cancelar?",
+    text: "¡Tus cambios no se verán reflejados!",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Continuar",
+    confirmButtonColor: "#FB8500",
+    cancelButtonText: "Cancelar"
+  }).then((result) => {
+    if (result.isConfirmed) {
+        inputs.forEach(input => {
+          input.disabled = true;
+          input.required = false;
+        });
+
+        labels.forEach(label => {
+          label.classList.remove('required-input');
+        });
+
+        actionButtons.classList.add('d-none');
+        editButton.classList.remove('d-none');
+    }
+  });
+}
+// |-----| SweetAlert2 "Update User Info Cancel" alert |-----| //
+// |-----| User Profile - Personal Info Tab JavaScript |-----| //
+
+// |-----| User Profile - Password Tab JavaScript |-----| //
+const toggleCurrentPassword = document.getElementById('toggleCurrentPassword');
+const toggleNewPassword = document.getElementById('toggleNewPassword');
+const toggleConfirmPassword = document.getElementById('toggleConfirmPassword');
+
+const currentPassword = document.getElementById('currentPassword');
+const newPassword = document.getElementById('newPassword');
+const confirmPassword = document.getElementById('confirmPassword');
+
+// Función para alternar la visibilidad de la contraseña
+function togglePasswordVisibility(inputField, toggleIcon) {
+  if (inputField.type === 'password') {
+    inputField.type = 'text';
+    toggleIcon.classList.remove('fa-eye');
+    toggleIcon.classList.add('fa-eye-slash');
+  } else {
+    inputField.type = 'password';
+    toggleIcon.classList.remove('fa-eye-slash');
+    toggleIcon.classList.add('fa-eye');
+  }
+}
+
+toggleCurrentPassword.addEventListener('click', function() {
+  togglePasswordVisibility(currentPassword, toggleCurrentPassword);
+});
+
+toggleNewPassword.addEventListener('click', function() {
+  togglePasswordVisibility(newPassword, toggleNewPassword);
+});
+
+toggleConfirmPassword.addEventListener('click', function() {
+  togglePasswordVisibility(confirmPassword, toggleConfirmPassword);
+});
+// |-----| User Profile - Password Tab JavaScript |-----| //
