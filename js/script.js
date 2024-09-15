@@ -50,6 +50,27 @@ function successfullRegister() {
 }
 // |-----| SweetAlert2 "Register" alert |-----| //
 
+// |-----| SweetAlert2 "LogOut" alert |-----| //
+function logout() {
+  Swal.fire({
+    title: "¿Estás seguro que quieres cerrar sesión?",
+    text: "¡Tendrás que iniciar tu sesión nuevamente!",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Cerrar",
+    confirmButtonColor: "#FB8500",
+    cancelButtonText: "Cancelar"
+  }).then((result) => {
+    if (result.isConfirmed) {
+      // Redirigir a /index.html después de confirmar el cierre de sesión
+      window.location.href = "/index.html";
+    }
+  });
+}
+// |-----| SweetAlert2 "LogOut" alert |-----| //
+
 // |-----| User Profile - Personal Info Tab JavaScript |-----| //
 const inputs = document.querySelectorAll('input');
 const labels = document.querySelectorAll('label');
