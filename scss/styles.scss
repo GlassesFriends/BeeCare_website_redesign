@@ -525,6 +525,37 @@ footer svg {
     background-size: cover;
 }
 
+.newSightingTitle .decoration-dots1 {
+    top: 1px;
+    right: -10px;
+    width: 250px;
+    opacity: 0.3;
+}
+
+.newSightingTitle .decoration-bee1 {
+    z-index: -1;
+    left: 21px;
+    top: 26px;
+    width: 100px;
+    transform: rotate(120deg);
+}
+
+.newSighting .decoration-bee2 {
+    z-index: 2;
+    right: 59.679px;
+    bottom: -650px;
+    width: 155px;
+    transform: rotate(-30.838deg);
+}
+
+.newSighting .decoration-bee3 {
+    z-index: -1;
+    right: 50px;
+    bottom: -500px;
+    width: 80px;
+    transform: rotate(20deg);
+}
+
 #multiStepForm {
     display: flex;
     flex-direction: column;
@@ -539,21 +570,21 @@ footer svg {
 
 .form-step {
     display: flex;
-    flex-direction: column; /* Asegura que los campos se alineen en columna */
+    flex-direction: column;
 }
 
 .form-step h3 {
-    margin-bottom: 20px; /* Espacio inferior del título */
+    margin-bottom: 20px;
 }
 
 .button-group {
     display: flex;
-    justify-content: center; /* Centra los botones horizontalmente */
-    gap: 10px; /* Espacio entre los botones */
+    justify-content: center;
+    gap: 10px;
 }
 
 button {
-    flex-shrink: 0; /* Asegura que los botones no se reduzcan de tamaño */
+    flex-shrink: 0;
 }
 
 .d-none {
