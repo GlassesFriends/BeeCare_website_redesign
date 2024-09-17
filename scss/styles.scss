@@ -9,7 +9,7 @@ h1 {
     font-weight: 700;
 }
 
-span {
+span, i {
     color: var(--bs-primary);
 }
 
@@ -568,31 +568,8 @@ footer svg {
     position: relative;
 }
 
-.form-step {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-step h3 {
-    margin-bottom: 20px;
-}
-
-.button-group {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-button {
-    flex-shrink: 0;
-}
-
-.d-none {
-    display: none;
-}
-
 .sightingFormImg {
-    width: 214px;
+    width: 280px;
 }
 
 #title-container {
@@ -617,28 +594,63 @@ button {
     align-items: center;
 }
 
-.step {
-    display: none;
+.form-step {
+    display: flex;
+    flex-direction: column;
 }
 
-#input-container {
-    display: inline-block;
-    box-shadow: none !important;
-    margin-top: 36px !important;
+button {
+    flex-shrink: 0;
 }
 
-#success {
-    display: none;
-}
-
-#success h4 {
-    color: #DC3545;
-}
-
-#q-box__buttons {
-    text-align: center;
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 // ||------------------------------| Sighting Form CSS |------------------------------| //
+
+
+
+// ||------------------------------| Sightings List CSS |------------------------------| //
+.sightingsListTitle .decoration-dots1 {
+    top: 1px;
+    right: -10px;
+    width: 250px;
+    opacity: 0.3;
+}
+
+.sightingsList .decoration-bee1 {
+    z-index: 4;
+    left: 53px;
+    top: 16px;
+    width: 91.335px;
+    transform: rotate(124.947deg);
+}
+
+.sightingsList .decoration-bee2 {
+    z-index: 2;
+    right: 117.809px;
+    bottom: 123.33px;
+    width: 124.313px;
+    transform: rotate(-28.075deg);
+}
+
+.registerSighting .decoration-dots2 {
+    top: 77px;
+    left: 10px;
+    width: 250px;
+    opacity: 0.3;
+}
+
+.registerSighting .decoration-bee3 {
+    z-index: 2;
+    left: 35.135px;
+    bottom: -4.055px;
+    width: 124.313px;
+    transform: rotate(27.775deg);
+}
+// ||------------------------------| Sightings List CSS |------------------------------| //
 
 
 
