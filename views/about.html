@@ -5,17 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- GOOGLE FONTS -->
+    <!-- Font #1: Roboto Slab -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Font #1: Roboto Slab -->
 
+    <!-- Font #2: Caveat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <!-- Font #2: Caveat -->
+    <!-- GOOGLE FONTS -->
 
-    <link rel="stylesheet" href="/css/font-awesome.css" />
+    <!-- BOOTSTRAP 5 & BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/css/bootstrap.css" />
+    <!-- BOOTSTRAP 5 & BOOTSTRAP ICONS -->
+
+    <!-- LOCAL CSS STYLESHEET -->
     <link rel="stylesheet" href="/css/styles.css" />
+    <!-- LOCAL CSS STYLESHEET -->
+     
     <link rel="icon" href="/images/beeCareLogo2.png" />
     <title>BeeCare | About Us</title>
   </head>
@@ -47,12 +59,12 @@
                 Avistamientos
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="views/sightings.html">Mapa</a></li>
-                <li><a class="dropdown-item" href="views/newSighting.html">Registrar avistamiento</a></li>
+                <li><a class="dropdown-item" href="sightings.html">Mapa</a></li>
+                <li><a class="dropdown-item" href="newSighting.html">Registrar avistamiento</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="views/beeCareShop.html">BeeCare Shop <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a class="nav-link" href="beeCareShop.html">BeeCare Shop <i class="bi bi-box-arrow-up-right text-dark"></i></a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -63,7 +75,7 @@
                 <li><a class="dropdown-item" href="signup.html">Registrarme</a></li>
                 <li><a class="dropdown-item" href="profile.html">Mi perfil</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" onclick=logout()>Cerrar sesión</a></li>
+                <li><a class="dropdown-item text-danger" onclick=logout()><i class="bi bi-box-arrow-right text-danger"></i> Cerrar sesión</a></li>
               </ul>
             </li>
           </ul>
@@ -88,7 +100,7 @@
 
               <div class="text-container p-3 d-flex flex-column justify-content-center h-100 mb-5">
                 <h1 class="display-3 fw-bold">Sobre nosotros</h1>
-                <p><img width="16" height="16" src="/images/homeIcon.png"/> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover text-white" href="/index.html">Inicio</a> > Sobre nosotros</p>
+                <p><i class="bi bi-house-door text-white"></i> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover text-white" href="/index.html">Inicio</a> > Sobre nosotros</p>
               </div>
 
             </div>
@@ -107,7 +119,7 @@
     <!-- Intro Section Start -->
     <section id="Intro" class="intro position-relative py-5">
       <img src="/images/decorationDots.svg" class="decoration-dots position-absolute">
-      <img src="/images/decorationBee.svg" class="decoration-bee position-absolute">
+      <img src="/images/decorationBee.svg" class="decoration-bee position-absolute d-none d-xxl-block">
 
       <div class="container">
         <div class="row align-items-center">
@@ -180,7 +192,7 @@
     <!-- Services Section Start -->
     <section id="services" class="services position-relative py-5">
       <img src="/images/decorationBee.svg" class="decoration-bee1 position-absolute">
-      <img src="/images/decorationBee.svg" class="decoration-bee2 position-absolute">
+      <img src="/images/decorationBee.svg" class="decoration-bee2 position-absolute d-none d-xxl-block">
       <img src="/images/decorationDots.svg" class="decoration-dots position-absolute">
       
       <div class="container">
@@ -199,7 +211,7 @@
                 <img src="/images/beeIcon.svg" class="p-3 my-4">
                 <h5 class="card-title">Descubre el mundo de las abejas</h5>
                 <p class="card-text fw-light">Descubre información clave sobre las abejas nativas y su impacto en el ecosistema.</p>
-                <p><a href="/views/blog.html" class="link-secondary link-offset-2">Visitar Blog</a></p>
+                <p><a href="/views/blog.html" class="link-secondary link-offset-2">Visitar Blog <i class="bi bi-arrow-right-short text-secondary"></i></a></p>
               </div>
             </div>
           </div>
@@ -211,7 +223,7 @@
                 <img src="/images/AIIcon.svg" class="p-3 my-4">
                 <h5 class="card-title">Identifica especies de abejas con IA</h5>
                 <p class="card-text fw-light">Identifica especies de abejas mediante una fotografía con nuestra IA avanzada.</p>
-                <p><a href="/views/newSighting.html" class="link-secondary link-offset-2">Registrar avistamiento</a></p>
+                <p><a href="/views/newSighting.html" class="link-secondary link-offset-2">Registrar avistamiento <i class="bi bi-arrow-right-short text-secondary"></i></a></p>
               </div>
             </div>
           </div>
@@ -223,7 +235,7 @@
                 <img src="/images/honeycombsIcon.svg" class="p-3 my-4">
                 <h5 class="card-title">Miel pura y 100% Natural</h5>
                 <p class="card-text fw-light">Compra miel natural y apoya a apicultores mexicanos comprometidos con el medio ambiente.</p>
-                <p><a href="/views/beeCareShop.html" class="link-secondary link-offset-2">Comprar ahora</a></p>
+                <p><a href="/views/beeCareShop.html" class="link-secondary link-offset-2">Comprar ahora <i class="bi bi-arrow-right-short text-secondary"></i></a></p>
               </div>
             </div>
           </div>
@@ -237,7 +249,6 @@
     <!-- Team Members Start -->
     <section id="team" class="team position-relative py-5 bg-light">
       <img src="/images/decorationBee.svg" class="decoration-bee position-absolute">
-      <img src="/images/decorationDots.svg" class="decoration-dots position-absolute">
 
       <div class="container">
         <div class="row text-center">
@@ -257,9 +268,9 @@
                 <p class="card-text fw-light">Líder, desarrollador y DBA</p>
 
                 <div class="social-icons d-flex justify-content-center gap-4">
-                  <i class="fab fa-twitter fa-2x text-secondary"></i>
-                  <i class="fab fa-github fa-2x text-secondary"></i>
-                  <i class="fab fa-linkedin fa-2x text-secondary"></i>
+                  <i class="bi bi-twitter text-secondary fs-2"></i>
+                  <i class="bi bi-github text-secondary fs-2"></i>
+                  <i class="bi bi-linkedin text-secondary fs-2"></i>
                 </div>
               </div>
             </div>
@@ -275,9 +286,9 @@
                 <p class="card-text fw-light">Diseñadora y desarrolladora</p>
 
                 <div class="social-icons d-flex justify-content-center gap-4">
-                  <a href="https://x.com/Eipril_0103"><i class="fab fa-twitter fa-2x text-secondary"></i></a>
-                  <a href="https://github.com/iscRamirezAbril"><i class="fab fa-github fa-2x text-secondary"></i></a>
-                  <a href="www.linkedin.com/in/abril-ramirez-flores-71a26b275"><i class="fab fa-linkedin fa-2x text-secondary"></i></a>
+                  <a href="https://x.com/Eipril_0103"><i class="bi bi-twitter text-secondary fs-2"></i></a>
+                  <a href="https://github.com/iscRamirezAbril"><i class="bi bi-github text-secondary fs-2"></i></a>
+                  <a href="www.linkedin.com/in/abril-ramirez-flores-71a26b275"><i class="bi bi-linkedin text-secondary fs-2"></i></a>
                 </div>
               </div>
             </div>
@@ -293,9 +304,9 @@
                 <p class="card-text fw-light">Desarrollador y DBA</p>
 
                 <div class="social-icons d-flex justify-content-center gap-4">
-                  <i class="fab fa-twitter fa-2x text-secondary"></i>
-                  <i class="fab fa-github fa-2x text-secondary"></i>
-                  <i class="fab fa-linkedin fa-2x text-secondary"></i>
+                  <i class="bi bi-twitter text-secondary fs-2"></i>
+                  <i class="bi bi-github text-secondary fs-2"></i>
+                  <i class="bi bi-linkedin text-secondary fs-2"></i>
                 </div>
               </div>
             </div>
@@ -316,7 +327,7 @@
 
         <div class="row align-items-center">
           <!-- Column 1 -->
-          <div class="col-lg-6 d-none d-md-block">
+          <div class="col-lg-6 d-none d-lg-block">
             <div class="image-container d-flex">
               <img src="/images/contactImage.png" alt="Contact image" class="img-fluid">
             </div>
@@ -407,9 +418,9 @@
           <div class="d-flex flex-column flex-sm-row justify-content-between">
             <p>© 2024 GlassesFriends. Todos los derechos reservados.</p>
             <ul class="social-icons d-flex justify-content-center gap-3">
-              <i class="fab fa-facebook fa-2x"></i>
-              <i class="fab fa-twitter fa-2x"></i>
-              <i class="fab fa-instagram fa-2x"></i>
+              <i class="bi bi-facebook text-dark fs-3"></i>
+              <i class="bi bi-twitter text-dark fs-3"></i>
+              <i class="bi bi-instagram text-dark fs-3"></i>
             </ul>
           </div>
 
@@ -418,9 +429,11 @@
     </section>
     <!-- Social media End -->
 
+    <!-- SCRIPTS -->
     <script src="sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/script.js"></script>
+    <!-- SCRIPTS -->
   </body>
 </html>

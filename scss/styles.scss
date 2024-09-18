@@ -213,6 +213,7 @@ footer svg {
 }
 
 .contact .decoration-bee2 {
+    z-index: 2;
     left: 150px;
     bottom: -12.886px;
     width: 66.782px;
@@ -280,13 +281,6 @@ footer svg {
 // |=====| Team Members CSS |=====| //
 .team .teamMember {
     width: 200px;
-}
-
-.team .decoration-dots {
-    top: 250px;
-    right: -10px;
-    width: 200px;
-    opacity: 0.3;
 }
 
 .team .decoration-bee {
@@ -477,6 +471,7 @@ footer svg {
 
 
 // ||------------------------------| Profile User CSS |------------------------------| //
+// |=====| Profile User - About Tab CSS |=====| //
 .userProfile .decoration-bee1 {
     z-index: 2;
     right: 80px;
@@ -493,38 +488,40 @@ footer svg {
     height: 66.782px;
     transform: rotate(52.034deg);
 }
-// ||------------------------------| Profile User CSS |------------------------------| //
+// |=====| Profile User - About Tab CSS |=====| //
 
-
-
-// ||------------------------------| Profile User - Password Tab CSS |------------------------------| //
+// |=====| Profile User - Password Tab CSS |=====| //
 #toggleCurrentPassword {
-    top: 133px;
+    top: 128px;
     right: 15px; 
     cursor: pointer;
 }
 
 #toggleNewPassword {
-    top: 217px;
+    top: 212px;
     right: 15px; 
     cursor: pointer
 }
 
 #toggleConfirmPassword {
-    top: 302px;
+    top: 297px;
     right: 15px; 
     cursor: pointer;
 }
-// ||------------------------------| Profile User - Password Tab CSS |------------------------------| //
+// |=====| Profile User - Password Tab CSS |=====| //
+// ||------------------------------| Profile User CSS |------------------------------| //
 
 
 
 // ||------------------------------| Sighting Form CSS |------------------------------| //
+// |=====| Header CSS |=====| //
 .sightingFormHeader {
     background: url("https://images.unsplash.com/photo-1628355155145-a886bf55f508?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") top center no-repeat;
     background-size: cover;
 }
+// |=====| Header CSS |=====| //
 
+// |=====| Form Section CSS |=====| //
 .newSightingTitle .decoration-dots1 {
     top: 1px;
     right: -10px;
@@ -555,7 +552,9 @@ footer svg {
     width: 80px;
     transform: rotate(20deg);
 }
+// |=====| Form Section CSS |=====| //
 
+// |=====| Form General CSS |=====| //
 #multiStepForm {
     display: flex;
     flex-direction: column;
@@ -567,7 +566,9 @@ footer svg {
     box-sizing: border-box;
     position: relative;
 }
+// |=====| Form General CSS |=====| //
 
+// |=====| Form "Title" Section CSS |=====| //
 .sightingFormImg {
     width: 280px;
 }
@@ -584,7 +585,9 @@ footer svg {
     box-sizing: border-box;
     position: relative;
 }
+// |=====| Form "Title" Section CSS |=====| //
 
+// |=====| Form "Steps" Section CSS |=====| //
 #steps-container {
     margin: auto;
     width: 500px;
@@ -592,6 +595,13 @@ footer svg {
     display: flex;
     vertical-align: middle;
     align-items: center;
+}
+
+.newSightingForm iframe {
+    max-width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    display: block;
 }
 
 .form-step {
@@ -608,11 +618,13 @@ button {
     justify-content: center;
     gap: 10px;
 }
+// |=====| Form "Steps" Section CSS |=====| //
 // ||------------------------------| Sighting Form CSS |------------------------------| //
 
 
 
 // ||------------------------------| Sightings List CSS |------------------------------| //
+// |=====| Community Sightings Section CSS |=====| //
 .sightingsListTitle .decoration-dots1 {
     top: 1px;
     right: -10px;
@@ -635,7 +647,9 @@ button {
     width: 124.313px;
     transform: rotate(-28.075deg);
 }
+// |=====| Community Sightings Section CSS |=====| //
 
+// |=====| New Sightings Form Section CSS |=====| //
 .registerSighting .decoration-dots2 {
     top: 77px;
     left: 10px;
@@ -650,6 +664,7 @@ button {
     width: 124.313px;
     transform: rotate(27.775deg);
 }
+// |=====| New Sightings Form Section CSS |=====| //
 // ||------------------------------| Sightings List CSS |------------------------------| //
 
 
@@ -672,9 +687,6 @@ button {
 }
  
 @media (max-width: 767px) {
-    #qbox-container {
-        padding: 30px;
-    }
     #steps-container {
         width: 100%;
         min-height: 400px;
@@ -682,14 +694,51 @@ button {
     #title-container {
         padding-top: 50px;
     }
+
+    // |=====| Profile User - Password Tab CSS |=====| //
+    #toggleCurrentPassword {
+        top: 125px;
+        right: 15px; 
+        cursor: pointer;
+    }
+
+    #toggleNewPassword {
+        top: 210px;
+        right: 15px; 
+        cursor: pointer
+    }
+
+    #toggleConfirmPassword {
+        top: 293px;
+        right: 15px; 
+        cursor: pointer;
+    }
+    // |=====| Profile User - Password Tab CSS |=====| //
 }
  
 @media (max-width: 560px) {
-    #qbox-container {
-        padding: 40px;
-    }
     #title-container {
         padding-top: 45px;
     }
+
+    // |=====| Profile User - Password Tab CSS |=====| //
+    #toggleCurrentPassword {
+        top: 109px;
+        right: 15px; 
+        cursor: pointer;
+    }
+
+    #toggleNewPassword {
+        top: 185px;
+        right: 15px; 
+        cursor: pointer
+    }
+
+    #toggleConfirmPassword {
+        top: 262px;
+        right: 15px; 
+        cursor: pointer;
+    }
+    // |=====| Profile User - Password Tab CSS |=====| //
 }
 // ||------------------------------| Media Queries |------------------------------| //

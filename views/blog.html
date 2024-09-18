@@ -5,17 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- GOOGLE FONTS -->
+    <!-- Font #1: Roboto Slab -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Font #1: Roboto Slab -->
 
+    <!-- Font #2: Caveat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <!-- Font #2: Caveat -->
+    <!-- GOOGLE FONTS -->
 
-    <link rel="stylesheet" href="/css/font-awesome.css" />
+    <!-- BOOTSTRAP 5 & BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/css/bootstrap.css" />
+    <!-- BOOTSTRAP 5 & BOOTSTRAP ICONS -->
+
+    <!-- LOCAL CSS STYLESHEET -->
     <link rel="stylesheet" href="/css/styles.css" />
+    <!-- LOCAL CSS STYLESHEET -->
+
     <link rel="icon" href="/images/beeCareLogo2.png" />
     <title>BeeCare | Blog Home Page</title>
   </head>
@@ -52,7 +64,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="beeCareShop.html">BeeCare Shop <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a class="nav-link" href="beeCareShop.html">BeeCare Shop <i class="bi bi-box-arrow-up-right text-dark"></i></a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -63,7 +75,7 @@
                 <li><a class="dropdown-item" href="signup.html">Registrarme</a></li>
                 <li><a class="dropdown-item" href="profile.html">Mi perfil</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="/index.html">Cerrar sesión</a></li>
+                <li><a class="dropdown-item text-danger" onclick=logout()><i class="bi bi-box-arrow-right text-danger"></i> Cerrar sesión</a></li>
               </ul>
             </li>
           </ul>
@@ -88,7 +100,7 @@
 
               <div class="text-container p-3 d-flex flex-column justify-content-center h-100 mb-5">
                 <h1 class="display-3 fw-bold">Nuestras publicaciones</h1>
-                <p><img width="16" height="16" src="/images/homeIcon.png"/> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover text-white" href="/index.html">Inicio</a> > Blog</p>
+                <p><i class="bi bi-house-door text-white"></i> <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover text-white" href="/index.html">Inicio</a> > Blog</p>
               </div>
 
             </div>
@@ -119,9 +131,9 @@
                   <img class="card-img-top" src="https://images.unsplash.com/photo-1568526381923-caf3fd520382?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Article 9">
                   <div class="card-body pt-3">
                     <div class="pb-2">
-                      <p class="d-inline pe-3"><img width="16" height="16" src="/images/userIcon.png"/> BeeCare</p>
-                      <p class="d-inline pe-3"><img width="16" height="16" src="/images/commnetIcon.png"/> 1 comentario</p>
-                      <p class="d-inline"><img width="16" height="16" src="/images/calendarIcon.png"/> 15/Sept/24</p>
+                      <p class="d-inline pe-3"><i class="bi bi-person"></i> BeeCare</p>
+                      <p class="d-inline pe-3"><i class="bi bi-chat"></i> 1 comentario</p>
+                      <p class="d-inline"><i class="bi bi-calendar4-event pe-1"></i>15/Sept/24</p>
                     </div>
   
                     <h5 class="card-title">Abejas en peligro de extinción</h5>
@@ -137,9 +149,9 @@
                   <img class="card-img-top" src="https://images.unsplash.com/photo-1498936178812-4b2e558d2937?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Article 8">
                   <div class="card-body pt-3">
                     <div class="pb-2">
-                      <p class="d-inline pe-3"><img width="16" height="16" src="/images/userIcon.png"/> BeeCare</p>
-                      <p class="d-inline pe-3"><img width="16" height="16" src="/images/commnetIcon.png"/> 3 comentarios</p>
-                      <p class="d-inline"><img width="16" height="16" src="/images/calendarIcon.png"/> 10/Sept/24</p>
+                      <p class="d-inline pe-3"><i class="bi bi-person"></i> BeeCare</p>
+                      <p class="d-inline pe-3"><i class="bi bi-chat"></i> 3 comentarios</p>
+                      <p class="d-inline"><i class="bi bi-calendar4-event pe-1"></i>10/Sept/24</p>
                     </div>
   
                     <h5 class="card-title">Especies de abejas mexicanas</h5>
@@ -155,9 +167,9 @@
                   <img class="card-img-top" src="https://images.unsplash.com/photo-1556201977-1df3c782a58e?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Article 7">
                   <div class="card-body pt-3">
                     <div class="pb-2">
-                      <p class="d-inline pe-3"><img width="16" height="16" src="/images/userIcon.png"/> BeeCare</p>
-                      <p class="d-inline pe-3"><img width="16" height="16" src="/images/commnetIcon.png"/> 1 comentario</p>
-                      <p class="d-inline"><img width="16" height="16" src="/images/calendarIcon.png"/> 30/Agosto/24</p>
+                      <p class="d-inline pe-3"><i class="bi bi-person"></i> BeeCare</p>
+                      <p class="d-inline pe-3"><i class="bi bi-chat"></i> 1 comentario</p>
+                      <p class="d-inline"><i class="bi bi-calendar4-event pe-1"></i>30/Agosto/24</p>
                     </div>
   
                     <h5 class="card-title">Apicultura en México</h5>
@@ -173,9 +185,9 @@
                   <img class="card-img-top" src="https://images.unsplash.com/photo-1495298975657-492a1d068595?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Article 6">
                   <div class="card-body pt-3">
                     <div class="pb-2">
-                      <p class="d-inline pe-3"><img width="16" height="16" src="/images/userIcon.png"/> BeeCare</p>
-                      <p class="d-inline pe-3"><img width="16" height="16" src="/images/commnetIcon.png"/> 2 comentarios</p>
-                      <p class="d-inline"><img width="16" height="16" src="/images/calendarIcon.png"/> 25/Agosto/24</p>
+                      <p class="d-inline pe-3"><i class="bi bi-person"></i> BeeCare</p>
+                      <p class="d-inline pe-3"><i class="bi bi-chat"></i> 2 comentarios</p>
+                      <p class="d-inline"><i class="bi bi-calendar4-event pe-1"></i>25/Agosto/24</p>
                     </div>
   
                     <h5 class="card-title">Las abejas no solo producen miel</h5>
@@ -191,9 +203,9 @@
                   <img class="card-img-top" src="https://images.unsplash.com/photo-1529431545689-09cec0e6b0ec?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Article 5">
                   <div class="card-body pt-3">
                     <div class="pb-2">
-                      <p class="d-inline pe-3"><img width="16" height="16" src="/images/userIcon.png"/> BeeCare</p>
-                      <p class="d-inline pe-3"><img width="16" height="16" src="/images/commnetIcon.png"/> 1 comentario</p>
-                      <p class="d-inline"><img width="16" height="16" src="/images/calendarIcon.png"/> 24/Agosto/24</p>
+                      <p class="d-inline pe-3"><i class="bi bi-person"></i> BeeCare</p>
+                      <p class="d-inline pe-3"><i class="bi bi-chat"></i> 1 comentario</p>
+                      <p class="d-inline"><i class="bi bi-calendar4-event pe-1"></i>24/Agosto/24</p>
                     </div>
   
                     <h5 class="card-title">Beneficios del pólen en los humanos</h5>
@@ -209,9 +221,9 @@
                   <img class="card-img-top" src="https://images.unsplash.com/photo-1534512547189-5944d6fd30e8?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Article 4">
                   <div class="card-body pt-3">
                     <div class="pb-2">
-                      <p class="d-inline pe-3"><img width="16" height="16" src="/images/userIcon.png"/> BeeCare</p>
-                      <p class="d-inline pe-3"><img width="16" height="16" src="/images/commnetIcon.png"/> 4 comentarios</p>
-                      <p class="d-inline"><img width="16" height="16" src="/images/calendarIcon.png"/> 20/Agosto/24</p>
+                      <p class="d-inline pe-3"><i class="bi bi-person"></i> BeeCare</p>
+                      <p class="d-inline pe-3"><i class="bi bi-chat"></i> 4 comentarios</p>
+                      <p class="d-inline"><i class="bi bi-calendar4-event pe-1"></i>20/Agosto/24</p>
                     </div>
   
                     <h5 class="card-title">¿De qué se alimentan las abejas?</h5>
@@ -227,9 +239,9 @@
                   <img class="card-img-top" src="https://images.unsplash.com/photo-1719077525865-ccdea5960050?q=80&w=1734&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Article 3">
                   <div class="card-body pt-3">
                     <div class="pb-2">
-                      <p class="d-inline pe-3"><img width="16" height="16" src="/images/userIcon.png"/> BeeCare</p>
-                      <p class="d-inline pe-3"><img width="16" height="16" src="/images/commnetIcon.png"/> 3 comentarios</p>
-                      <p class="d-inline"><img width="16" height="16" src="/images/calendarIcon.png"/> 17/Agosto/24</p>
+                      <p class="d-inline pe-3"><i class="bi bi-person"></i> BeeCare</p>
+                      <p class="d-inline pe-3"><i class="bi bi-chat"></i> 3 comentarios</p>
+                      <p class="d-inline"><i class="bi bi-calendar4-event pe-1"></i>17/Agosto/24</p>
                     </div>
   
                     <h5 class="card-title">La abeja reina y su importancia en la colmena</h5>
@@ -245,9 +257,9 @@
                   <img class="card-img-top" src="https://images.unsplash.com/photo-1500870678590-71c79bae1e54?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Article 2">
                   <div class="card-body pt-3">
                     <div class="pb-2">
-                      <p class="d-inline pe-3"><img width="16" height="16" src="/images/userIcon.png"/> BeeCare</p>
-                      <p class="d-inline pe-3"><img width="16" height="16" src="/images/commnetIcon.png"/> 6 comentarios</p>
-                      <p class="d-inline"><img width="16" height="16" src="/images/calendarIcon.png"/> 15/Agosto/24</p>
+                      <p class="d-inline pe-3"><i class="bi bi-person"></i> BeeCare</p>
+                      <p class="d-inline pe-3"><i class="bi bi-chat"></i> 6 comentarios</p>
+                      <p class="d-inline"><i class="bi bi-calendar4-event pe-1"></i>15/Agosto/24</p>
                     </div>
   
                     <h5 class="card-title">Migración de las abejas</h5>
@@ -263,9 +275,9 @@
                   <img class="card-img-top" src="https://images.unsplash.com/photo-1612833429806-9e1dfb3d026d?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Article 1">
                   <div class="card-body pt-3">
                     <div class="pb-2">
-                      <p class="d-inline pe-3"><img width="16" height="16" src="/images/userIcon.png"/> BeeCare</p>
-                      <p class="d-inline pe-3"><img width="16" height="16" src="/images/commnetIcon.png"/> 1 comentario</p>
-                      <p class="d-inline"><img width="16" height="16" src="/images/calendarIcon.png"/> 10/Agosto/24</p>
+                      <p class="d-inline pe-3"><i class="bi bi-person"></i> BeeCare</p>
+                      <p class="d-inline pe-3"><i class="bi bi-chat"></i> 1 comentario</p>
+                      <p class="d-inline"><i class="bi bi-calendar4-event pe-1"></i>10/Agosto/24</p>
                     </div>
   
                     <h5 class="card-title">Otros insectos y animales polinizadores</h5>
@@ -331,9 +343,9 @@
           <div class="d-flex flex-column flex-sm-row justify-content-between">
             <p>© 2024 GlassesFriends. Todos los derechos reservados.</p>
             <ul class="social-icons d-flex justify-content-center gap-3">
-              <i class="fab fa-facebook fa-2x"></i>
-              <i class="fab fa-twitter fa-2x"></i>
-              <i class="fab fa-instagram fa-2x"></i>
+              <i class="bi bi-facebook text-dark fs-3"></i>
+              <i class="bi bi-twitter text-dark fs-3"></i>
+              <i class="bi bi-instagram text-dark fs-3"></i>
             </ul>
           </div>
 
@@ -342,9 +354,11 @@
     </section>
     <!-- Social media End -->
 
+    <!-- SCRIPTS -->
     <script src="sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/script.js"></script>
+    <!-- SCRIPTS -->
   </body>
 </html>

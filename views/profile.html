@@ -5,19 +5,31 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-  
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
-  
-      <link rel="stylesheet" href="/css/font-awesome.css" />
-      <link rel="stylesheet" href="/css/bootstrap.css" />
-      <link rel="stylesheet" href="/css/styles.css" />
-      <link rel="icon" href="/images/beeCareLogo2.png" />
-      <title>BeeCare | Coming Soon...</title>
+    <!-- GOOGLE FONTS -->
+    <!-- Font #1: Roboto Slab -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Font #1: Roboto Slab -->
+
+    <!-- Font #2: Caveat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <!-- Font #2: Caveat -->
+    <!-- GOOGLE FONTS -->
+
+    <!-- BOOTSTRAP 5 & BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <!-- BOOTSTRAP 5 & BOOTSTRAP ICONS -->
+
+    <!-- LOCAL CSS STYLESHEET -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- LOCAL CSS STYLESHEET -->
+
+    <link rel="icon" href="/images/beeCareLogo2.png" />
+    <title>BeeCare | My Profile</title>
   </head>
 
   <body>
@@ -52,7 +64,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="beeCareShop.html">BeeCare Shop <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="nav-link" href="beeCareShop.html">BeeCare Shop <i class="bi bi-box-arrow-up-right text-dark"></i></a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -63,7 +75,7 @@
                   <li><a class="dropdown-item" href="signup.html">Registrarme</a></li>
                   <li><a class="dropdown-item" href="profile.html">Mi perfil</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="/index.html">Cerrar sesión</a></li>
+                  <li><a class="dropdown-item text-danger" onclick=logout()><i class="bi bi-box-arrow-right text-danger"></i> Cerrar sesión</a></li>
                 </ul>
               </li>
             </ul>
@@ -84,7 +96,7 @@
 
         <div class="container">
           <div class="row gy-4 gy-lg-0">
-
+            <!-- User Profile Picture -->
             <div class="col-12 col-lg-4 col-xl-3">
               <div class="row gy-4">
 
@@ -103,11 +115,13 @@
                         <p class="text-center text-dark fw-light mb-4">Avistamientos registrados: <strong>2</strong></p>
                       </div>
                     </div>
-                  </div>
+                </div>
 
               </div>
             </div>
+            <!-- User Profile Picture -->
 
+            <!-- User Profile Tabs -->
             <div class="col-12 col-lg-8 col-xl-9">
               <div class="card border-0">
                 <div class="card-body p-4">
@@ -122,8 +136,9 @@
                     </li>
                   </ul>
 
-                    <div class="tab-content" id="profileTabContent">
-                      <div class="tab-pane fade show active" id="overview-tab-pane" role="tabpanel" aria-labelledby="overview-tab" tabindex="0">
+                  <div class="tab-content" id="profileTabContent">
+                    <!-- User Personal Info Tab -->
+                    <div class="tab-pane fade show active" id="overview-tab-pane" role="tabpanel" aria-labelledby="overview-tab" tabindex="0">
                         <form id="profileForm" action="#!" class="row gy-sm-2">
                             <h4 class="pt-4">Información personal</h4>
                             <div class="col-12 col-md-6">
@@ -159,7 +174,9 @@
                             </div>
                         </form>
                     </div>
-                    
+                    <!-- User Personal Info Tab -->
+
+                    <!-- User Password Settings Tab -->
                     <div class="tab-pane fade position-relative" id="password-tab-pane" role="tabpanel" aria-labelledby="password-tab" tabindex="0">
                       <form action="#!">
                         <div class="row gy-sm-2">
@@ -167,17 +184,17 @@
                           <div class="col-12">
                             <label for="currentPassword" class="form-label">Contraseña actual</label>
                             <input type="password" class="form-control" id="currentPassword" placeholder="Escribe tu contraseña actual">
-                            <i class="far fa-eye position-absolute" id="toggleCurrentPassword"></i>
+                            <i class="bi bi-eye position-absolute text-dark" id="toggleCurrentPassword"></i>
                           </div>
                           <div class="col-12">
                             <label for="newPassword" class="form-label">Nueva contraseña</label>
                             <input type="password" class="form-control" id="newPassword" placeholder="Escribe tu nueva contraseña">
-                            <i class="far fa-eye position-absolute" id="toggleNewPassword"></i>
+                            <i class="bi bi-eye position-absolute text-dark" id="toggleNewPassword"></i>
                           </div>
                           <div class="col-12">
                             <label for="confirmPassword" class="form-label">Repetir nueva contraseña</label>
                             <input type="password" class="form-control" id="confirmPassword" placeholder="Repite tu nueva contraseña">
-                            <i class="far fa-eye position-absolute" id="toggleConfirmPassword"></i>
+                            <i class="bi bi-eye position-absolute text-dark" id="toggleConfirmPassword"></i>
                           </div>
                           <div class="col-12 pt-4">
                             <button type="submit" class="btn btn-primary text-white">Guardar cambios</button>
@@ -195,10 +212,12 @@
                       </div>
 
                     </div>
+                    <!-- User Password Settings Tab -->
                   </div>
                 </div>
               </div>
             </div>
+            <!-- User Profile Tabs -->
           </div>
         </div>
       
@@ -256,9 +275,9 @@
           <div class="d-flex flex-column flex-sm-row justify-content-between">
             <p>© 2024 GlassesFriends. Todos los derechos reservados.</p>
             <ul class="social-icons d-flex justify-content-center gap-3">
-              <i class="fab fa-facebook fa-2x"></i>
-              <i class="fab fa-twitter fa-2x"></i>
-              <i class="fab fa-instagram fa-2x"></i>
+              <i class="bi bi-facebook text-dark fs-3"></i>
+              <i class="bi bi-twitter text-dark fs-3"></i>
+              <i class="bi bi-instagram text-dark fs-3"></i>
             </ul>
           </div>
 
@@ -267,9 +286,11 @@
     </section>
     <!-- Social media End -->
        
+    <!-- SCRIPTS -->
     <script src="sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/script.js"></script>
+    <!-- SCRIPTS -->
   </body>
 </html>

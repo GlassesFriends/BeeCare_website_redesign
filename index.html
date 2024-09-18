@@ -5,17 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- GOOGLE FONTS -->
+    <!-- Font #1: Roboto Slab -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Font #1: Roboto Slab -->
 
+    <!-- Font #2: Caveat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <!-- Font #2: Caveat -->
+    <!-- GOOGLE FONTS -->
 
-    <link rel="stylesheet" href="css/font-awesome.css" />
+    <!-- BOOTSTRAP 5 & BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- BOOTSTRAP 5 & BOOTSTRAP ICONS -->
+
+    <!-- LOCAL CSS STYLESHEET -->
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- LOCAL CSS STYLESHEET -->
+
     <link rel="icon" href="images/beeCareLogo2.png" />
     <title>BeeCare | by GlassesFriends</title>
   </head>
@@ -52,7 +64,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="views/beeCareShop.html">BeeCare Shop <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a class="nav-link" href="views/beeCareShop.html">BeeCare Shop <i class="bi bi-box-arrow-up-right text-dark"></i></a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -63,7 +75,7 @@
                 <li><a class="dropdown-item" href="views/signup.html">Registrarme</a></li>
                 <li><a class="dropdown-item" href="views/profile.html">Mi perfil</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" onclick=logout()>Cerrar sesión</a></li>
+                <li><a class="dropdown-item text-danger" onclick=logout()><i class="bi bi-box-arrow-right text-danger"></i> Cerrar sesión</a></li>
               </ul>
             </li>
           </ul>
@@ -167,7 +179,7 @@
                 <img src="images/beeIcon.svg" class="p-3 my-4">
                 <h5 class="card-title">Descubre el mundo de las abejas</h5>
                 <p class="card-text fw-light">Descubre información clave sobre las abejas nativas y su impacto en el ecosistema.</p>
-                <p><a href="/views/blog.html" class="link-secondary link-offset-2">Visitar Blog</a></p>
+                <p><a href="/views/blog.html" class="link-secondary link-offset-2">Visitar Blog <i class="bi bi-arrow-right-short text-secondary"></i></a></p>
               </div>
             </div>
           </div>
@@ -179,7 +191,7 @@
                 <img src="images/AIIcon.svg" class="p-3 my-4">
                 <h5 class="card-title">Identifica especies de abejas con IA</h5>
                 <p class="card-text fw-light">Identifica especies de abejas mediante una fotografía con nuestra IA avanzada.</p>
-                <p><a href="/views/newSighting.html" class="link-secondary link-offset-2">Registrar avistamiento</a></p>
+                <p><a href="/views/newSighting.html" class="link-secondary link-offset-2">Registrar avistamiento <i class="bi bi-arrow-right-short text-secondary"></i></a></p>
               </div>
             </div>
           </div>
@@ -191,7 +203,7 @@
                 <img src="images/honeycombsIcon.svg" class="p-3 my-4">
                 <h5 class="card-title">Miel pura y 100% Natural</h5>
                 <p class="card-text fw-light">Compra miel natural y apoya a apicultores mexicanos comprometidos con el medio ambiente.</p>
-                <p><a href="/views/beeCareShop.html" class="link-secondary link-offset-2">Comprar ahora</a></p>
+                <p><a href="/views/beeCareShop.html" class="link-secondary link-offset-2">Comprar ahora <i class="bi bi-arrow-right-short text-secondary"></i></a></p>
               </div>
             </div>
           </div>
@@ -217,8 +229,8 @@
                 proporcionando detalles de esta. ¡Cada avistamiento cuenta para proteger la biodiversidad!
               </p>
               <div>
-                <a href="newSighting.html" class="btn btn-primary text-white">Nuevo avistamiento</a>
-                <a href="sightings.html" class="btn btn-secondary m-3 text-white">Registros</a>
+                <a href="/views/newSighting.html" class="btn btn-primary text-white">Nuevo avistamiento</a>
+                <a href="/views/sightings.html" class="btn btn-secondary m-3 text-white">Registros</a>
               </div>
             </div>
           </div>
@@ -251,9 +263,9 @@
                 <img class="card-img-top" src="https://images.unsplash.com/photo-1568526381923-caf3fd520382?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Article 1">
                 <div class="card-body pt-3">
                   <div class="pb-2">
-                    <p class="d-inline pe-3"><img width="16" height="16" src="/images/userIcon.png"/> BeeCare</p>
-                    <p class="d-inline pe-3"><img width="16" height="16" src="/images/commnetIcon.png"/> 1 comentario</p>
-                    <p class="d-inline"><img width="16" height="16" src="/images/calendarIcon.png"/> 15/Sept/24</p>
+                    <p class="d-inline pe-3"><i class="bi bi-person"></i> BeeCare</p>
+                    <p class="d-inline pe-3"><i class="bi bi-chat"></i> 1 comentario</p>
+                    <p class="d-inline"><i class="bi bi-calendar4-event pe-1"></i>15/Sept/24</p>
                   </div>
 
                   <h5 class="card-title">Abejas en peligro de extinción</h5>
@@ -269,9 +281,9 @@
                 <img class="card-img-top" src="https://images.unsplash.com/photo-1498936178812-4b2e558d2937?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Article 2">
                 <div class="card-body pt-3">
                   <div class="pb-2">
-                    <p class="d-inline pe-3"><img width="16" height="16" src="/images/userIcon.png"/> BeeCare</p>
-                    <p class="d-inline pe-3"><img width="16" height="16" src="/images/commnetIcon.png"/> 3 comentarios</p>
-                    <p class="d-inline"><img width="16" height="16" src="/images/calendarIcon.png"/> 10/Sept/24</p>
+                    <p class="d-inline pe-3"><i class="bi bi-person"></i> BeeCare</p>
+                    <p class="d-inline pe-3"><i class="bi bi-chat"></i> 3 comentarios</p>
+                    <p class="d-inline"><i class="bi bi-calendar4-event pe-1"></i>10/Sept/24</p>
                   </div>
 
                   <h5 class="card-title">Especies de abejas mexicanas</h5>
@@ -287,9 +299,9 @@
                 <img class="card-img-top" src="https://images.unsplash.com/photo-1556201977-1df3c782a58e?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Article 3">
                 <div class="card-body pt-3">
                   <div class="pb-2">
-                    <p class="d-inline pe-3"><img width="16" height="16" src="/images/userIcon.png"/> BeeCare</p>
-                    <p class="d-inline pe-3"><img width="16" height="16" src="/images/commnetIcon.png"/> 1 comentario</p>
-                    <p class="d-inline"><img width="16" height="16" src="/images/calendarIcon.png"/> 30/Agosto/24</p>
+                    <p class="d-inline pe-3"><i class="bi bi-person"></i> BeeCare</p>
+                    <p class="d-inline pe-3"><i class="bi bi-chat"></i> 1 comentario</p>
+                    <p class="d-inline"><i class="bi bi-calendar4-event pe-1"></i>30/Agosto/24</p>
                   </div>
 
                   <h5 class="card-title">Apicultura en México</h5>
@@ -400,7 +412,7 @@
 
         <div class="row align-items-center">
           <!-- Column 1 -->
-          <div class="col-lg-6 d-none d-md-block">
+          <div class="col-lg-6 d-none d-lg-block">
             <div class="image-container d-flex">
               <img src="images/contactImage.png" alt="Contact image" class="img-fluid">
             </div>
@@ -491,9 +503,9 @@
           <div class="d-flex flex-column flex-sm-row justify-content-between">
             <p>© 2024 GlassesFriends. Todos los derechos reservados.</p>
             <ul class="social-icons d-flex justify-content-center gap-3">
-              <i class="fab fa-facebook fa-2x"></i>
-              <i class="fab fa-twitter fa-2x"></i>
-              <i class="fab fa-instagram fa-2x"></i>
+              <i class="bi bi-facebook text-dark fs-3"></i>
+              <i class="bi bi-twitter text-dark fs-3"></i>
+              <i class="bi bi-instagram text-dark fs-3"></i>
             </ul>
           </div>
 
@@ -502,9 +514,11 @@
     </section>
     <!-- Social media End -->
 
+    <!-- SCRIPTS -->
     <script src="sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <!-- SCRIPTS -->
   </body>
 </html>
