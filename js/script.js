@@ -72,8 +72,9 @@ function logout() {
 // |-----| SweetAlert2 "LogOut" alert |-----| //
 
 // |-----| User Profile - Personal Info Tab JavaScript |-----| //
-const inputs = document.querySelectorAll('input');
-const labels = document.querySelectorAll('label');
+const profileForm = document.getElementById('profileForm');
+const inputs = profileForm.querySelectorAll('input');
+const labels = profileForm.querySelectorAll('label');
 const editButton = document.getElementById('editButton');
 const actionButtons = document.getElementById('actionButtons');
 
