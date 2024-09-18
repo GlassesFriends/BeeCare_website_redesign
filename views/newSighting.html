@@ -310,6 +310,13 @@
     </section>
     <!-- Social media End -->
 
+    <!-- BACK TO TOP BUTTON -->
+    <!-- Back to top button Start -->
+    <button id="to-top" onclick=scrollToTop() class="to-top-btn">
+      <i class="bi bi-arrow-up text-white"></i>
+    </button>
+    <!-- Back to top button End -->
+
     <!-- SCRIPTS -->
     <script src="sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -318,54 +325,3 @@
     <!-- SCRIPTS -->
   </body>
 </html>
-
-<!-- MULTI-STEPS FORM JS LOGIC -->
-<script>
-    const formSteps = document.querySelectorAll(".form-step");
-    const nextStepButtons = document.querySelectorAll(".next-step");
-    const prevStepButtons = document.querySelectorAll(".prev-step");
-
-    let currentStep = 0;
-
-    // Inicializa el primer paso visible
-    formSteps[currentStep].classList.remove("d-none");
-
-    nextStepButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-            goToNextStep();
-        });
-    });
-
-    prevStepButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-            goToPrevStep();
-        });
-    });
-
-    function goToNextStep() {
-        if (currentStep < formSteps.length - 1) {
-            formSteps[currentStep].classList.add("d-none");
-            currentStep++;
-            formSteps[currentStep].classList.remove("d-none");
-            updateReviewInfo();
-        }
-    }
-
-    function goToPrevStep() {
-        if (currentStep > 0) {
-            formSteps[currentStep].classList.add("d-none");
-            currentStep--;
-            formSteps[currentStep].classList.remove("d-none");
-        }
-    }
-
-    function updateReviewInfo() {
-        if (currentStep === formSteps.length - 1) {
-            document.getElementById("reviewSpecies").textContent = document.getElementById("species").value;
-            document.getElementById("reviewLocation").textContent = document.getElementById("location").value;
-            document.getElementById("reviewDate").textContent = document.getElementById("date").value;
-            document.getElementById("reviewNotes").textContent = document.getElementById("notes").value || "No hay notas adicionales.";
-        }
-    }
-</script>
-<!-- MULTI-STEPS FORM JS LOGIC -->

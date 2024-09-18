@@ -1,3 +1,61 @@
+// |-----| Scroll Effect function |-----| //
+window.onscroll = function() {
+  const toTopButton = document.getElementById("to-top");
+  
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      toTopButton.classList.add("show");
+  } else {
+      toTopButton.classList.remove("show");
+  }
+};
+// |-----| Scroll Effect function |-----| //
+
+// |-----| Multi-Steps New Sighting Form |-----| //
+const formSteps = document.querySelectorAll(".form-step");
+const nextStepButtons = document.querySelectorAll(".next-step");
+const prevStepButtons = document.querySelectorAll(".prev-step");
+
+let currentStep = 0;
+
+nextStepButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        goToNextStep();
+    });
+});
+
+prevStepButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        goToPrevStep();
+    });
+});
+
+function goToNextStep() {
+    if (currentStep < formSteps.length - 1) {
+        formSteps[currentStep].classList.add("d-none");
+        currentStep++;
+        formSteps[currentStep].classList.remove("d-none");
+        updateReviewInfo();
+    }
+}
+
+function goToPrevStep() {
+    if (currentStep > 0) {
+        formSteps[currentStep].classList.add("d-none");
+        currentStep--;
+        formSteps[currentStep].classList.remove("d-none");
+    }
+}
+
+function updateReviewInfo() {
+    if (currentStep === formSteps.length - 1) {
+        document.getElementById("reviewSpecies").textContent = document.getElementById("species").value;
+        document.getElementById("reviewLocation").textContent = document.getElementById("location").value;
+        document.getElementById("reviewDate").textContent = document.getElementById("date").value;
+        document.getElementById("reviewNotes").textContent = document.getElementById("notes").value || "No hay notas adicionales.";
+    }
+}
+// |-----| Multi-Steps New Sighting Form |-----| //
+
 // |-----| SweetAlert2 "Newsletter Subscription" alert |-----| //
 function newsletter() {
     Swal.fire({
@@ -184,3 +242,10 @@ toggleConfirmPassword.addEventListener('click', function() {
   togglePasswordVisibility(confirmPassword, toggleConfirmPassword);
 });
 // |-----| User Profile - Password Tab JavaScript |-----| //
+
+// |-----| Scroll To Top function |-----| //
+function scrollToTop() {
+  document.body.scrollTop = 0;  // Para Safari
+  document.documentElement.scrollTop = 0;  // Para Chrome, Firefox, IE y Opera
+}
+// |-----| Scroll To Top function |-----| //
