@@ -123,7 +123,7 @@ function logout() {
   }).then((result) => {
     if (result.isConfirmed) {
       // Redirigir a /index.html después de confirmar el cierre de sesión
-      window.location.href = "/index.html";
+      window.location.href = "index.html";
     }
   });
 }
