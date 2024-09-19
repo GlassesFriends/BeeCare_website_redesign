@@ -704,6 +704,7 @@ button {
     #title-container {
         padding: 80px 28px 28px 28px;
     }
+    
     #steps-container {
         width: 85%;
     }
@@ -717,10 +718,15 @@ button {
 }
  
 @media (max-width: 767px) {
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    
     #steps-container {
         width: 100%;
         min-height: 400px;
     }
+
     #title-container {
         padding-top: 50px;
     }
@@ -747,6 +753,10 @@ button {
 }
 
 @media (max-width: 560px) {
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
     #title-container {
         padding-top: 45px;
     }
