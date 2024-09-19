@@ -48,6 +48,7 @@ ul.list li::before {
 
 body {
   overflow-x: hidden;
+  width: 100%;
 }
 
 footer svg {
@@ -573,8 +574,8 @@ button {
 .to-top-btn {
   position: fixed;
   z-index: 100;
-  bottom: 20px;
-  right: 20px;
+  bottom: 25px;
+  right: 25px;
   opacity: 0;
   visibility: hidden;
   width: 60px;

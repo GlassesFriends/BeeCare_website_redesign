@@ -45,6 +45,7 @@ ul.list li::before {
 // |=====| Body CSS |=====| //
 body {
     overflow-x: hidden;
+    width: 100%;
 }
 // |=====| Body CSS |=====| //
 
@@ -673,8 +674,8 @@ button {
 .to-top-btn {
     position: fixed;
     z-index: 100;
-    bottom: 20px;
-    right: 20px;
+    bottom: 25px;
+    right: 25px;
     opacity: 0;
     visibility: hidden;
     width: 60px;
