@@ -1,6 +1,6 @@
 # BeeCare Website Redesign
 > This website aims to encourage the community about the importance of bees and why we should take care of them. Worked with Bootstrap.
-> Live demo [_here_]().
+> Live demo [_here_](https://glassesfriends.github.io/BeeCare_website_redesign/).
 
 
 ## Table of Contents
@@ -65,8 +65,8 @@ To add your own custom styles, use the `styles.scss` file.
 
 
 ## Project Status
-Project is: _in progress_
+Project is: _complete_
 
 
 ## Contact
-Created by [@Abril Ramirez](https://iscramirezabril.github.io/) - feel free to contact me!
+Created by [@Abril Ramirez](https://github.com/iscRamirezAbril) ([@GlassesFriends](https://github.com/GlassesFriends))
