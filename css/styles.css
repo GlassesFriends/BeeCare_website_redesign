@@ -136,50 +136,8 @@ footer svg {
   transform: rotate(300deg);
 }
 
-.shop .decoration-dots {
-  height: 200px;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  left: -39px;
-  top: 6px;
-  opacity: 0.3;
-}
-
-.shop .decoration-honey {
-  z-index: 1;
-  width: 407px;
-  height: 326px;
-  right: -169px;
-  bottom: 20.023px;
-}
-
-.shop .decoration-bee1 {
-  z-index: 2;
-  left: 27.584px;
-  top: 700px;
-  width: 155px;
-  height: 155px;
-  transform: rotate(22.431deg);
-}
-
-.shop .decoration-bee2 {
-  left: 570px;
-  top: 28px;
-  width: 88.106px;
-  height: 88.106px;
-  transform: rotate(128.373deg);
-}
-
-.shop .decoration-bee3 {
-  right: 571.232px;
-  top: 28px;
-  width: 88.106px;
-  height: 88.106px;
-  transform: rotate(225.627deg);
-}
-
 .contact .decoration-dots {
+  z-index: -2;
   top: 1px;
   right: -10px;
   width: 200px;
@@ -301,10 +259,6 @@ footer svg {
   transform: rotate(64.86deg);
 }
 
-.articleHeader {
-  background-color: var(--bs-light);
-}
-
 .image .decoration-dots1 {
   z-index: -1;
   top: 1px;
@@ -384,24 +338,6 @@ footer svg {
   transform: rotate(163.922deg);
 }
 
-.announcement .decoration-bee1 {
-  z-index: 2;
-  right: 62.318px;
-  top: 50px;
-  width: 155px;
-  height: 155px;
-  transform: rotate(-137.178deg);
-}
-
-.announcement .decoration-bee2 {
-  z-index: 2;
-  left: 120px;
-  bottom: 80.794px;
-  width: 66.782px;
-  height: 66.782px;
-  transform: rotate(52.034deg);
-}
-
 .userProfile .decoration-bee1 {
   z-index: 2;
   right: 80px;
@@ -443,6 +379,7 @@ footer svg {
 }
 
 .newSightingTitle .decoration-dots1 {
+  z-index: -2;
   top: 1px;
   right: -10px;
   width: 250px;
@@ -615,12 +552,96 @@ button {
   ::-webkit-scrollbar {
     width: 8px;
   }
-  #steps-container {
+  .social {
+    text-align: center;
+  }
+  .header {
+    text-align: center;
+  }
+  .about {
+    text-align: center;
+  }
+  .services .decoration-bee2 {
+    z-index: -1;
+    right: 10px;
+    top: -20px;
+    width: 50px;
+    transform: rotate(-32.538deg);
+  }
+  .aIFeature {
+    text-align: center;
+  }
+  .blog .decoration-bee {
+    z-index: 2;
+    right: 10px;
+    bottom: 100px;
+    height: 50Px;
+    transform: rotate(300deg);
+  }
+  .contact h1, .contact p {
+    text-align: center;
+  }
+  .aboutHeader {
+    text-align: center;
+  }
+  .intro {
+    text-align: center;
+  }
+  .intro .introImg {
     width: 100%;
-    min-height: 400px;
+    height: 50%;
+  }
+  .mision {
+    text-align: center;
+  }
+  .team .decoration-bee {
+    z-index: 2;
+    right: 15px;
+    top: 10px;
+    width: 50px;
+    transform: rotate(-120deg);
+  }
+  .blogHeader {
+    text-align: center;
+  }
+  .signin h1 {
+    text-align: center;
+  }
+  .linkSignIn {
+    text-align: center;
+  }
+  .signup h1 {
+    text-align: center;
+  }
+  .signup .decoration-bee1 {
+    z-index: 2;
+    right: 10px;
+    top: 10px;
+    width: 100px;
+    transform: rotate(-151.019deg);
+  }
+  .linkSignUp {
+    text-align: center;
+  }
+  .sightingFormHeader {
+    text-align: center;
+  }
+  .userProfile .decoration-bee1 {
+    z-index: 2;
+    right: 80px;
+    top: 180px;
+    width: 50px;
+    transform: rotate(-137.178deg);
+  }
+  .registerSighting {
+    text-align: center;
   }
   #title-container {
     padding-top: 50px;
+  }
+  #steps-container {
+    width: 100%;
+    min-height: 400px;
   }
   #toggleCurrentPassword {
     top: 125px;
@@ -659,5 +680,37 @@ button {
     top: 262px;
     right: 15px;
     cursor: pointer;
+  }
+}
+@media (max-width: 480px) {
+  #title-container {
+    padding-top: 20px;
+    text-align: center;
+  }
+  #steps-container {
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .sightingFormImg {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+  .form-control {
+    width: 100%;
+  }
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
   }
 }
